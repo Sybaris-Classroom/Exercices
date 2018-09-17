@@ -20,42 +20,50 @@ namespace POO
 
         private void FrmVehicule_Load(object sender, EventArgs e)
         {
+            // Pour forcer la combobox à sélectionner un élément
             cbxTypeVehicule.SelectedIndex = 0;
         }
 
-        private VehiculeRoulant Veh;
+        // Illustre l'abstraction
+        private VehiculeRoulant vehiculeRoulant;
+        private enum VehiculeType { Camion = 1, Voiture = 0, Moto = 2 };
 
         private void btnCreation_Click(object sender, EventArgs e)
         {
-            if (Veh != null)
+            if (vehiculeRoulant != null)
             {
                 MessageBox.Show("Instance déjà créée");
                 return;
             }
-            switch (cbxTypeVehicule.Text)
+
+            VehiculeType vehiculeType = (VehiculeType)cbxTypeVehicule.SelectedIndex;
+            switch (vehiculeType)
             {
-                case "Camion": Veh = new Camion();
+                case VehiculeType.Camion:
+                    vehiculeRoulant = new Camion();
                     break;
-                case "Voiture": Veh = new Voiture();
+                case VehiculeType.Voiture:
+                    vehiculeRoulant = new Voiture();
                     break;
-                case "Moto": Veh = new Moto();
+                case VehiculeType.Moto:
+                    vehiculeRoulant = new Moto();
                     break;
 
                 default: throw new Exception(string.Format("Unkown Vehicule Type : {0}", cbxTypeVehicule.Text));
             }
             ToggleButtons();
 
-            txbCharge.Text = Veh.Charge.ToString();
-            txbConsoRef.Text = Veh.ConsoRef.ToString();
-            txbDistance.Text = Veh.Distance.ToString();
-            txbPassagers.Text = Veh.Passagers.ToString();
-            txbVitesseMaxi.Text = Veh.VitesseMaxi.ToString();
-            txbVitesseMini.Text = Veh.VitesseMini.ToString();
+            txbCharge.Text = vehiculeRoulant.Charge.ToString();
+            txbConsoRef.Text = vehiculeRoulant.ConsoRef.ToString();
+            txbDistance.Text = vehiculeRoulant.Distance.ToString();
+            txbPassagers.Text = vehiculeRoulant.Passagers.ToString();
+            txbVitesseMaxi.Text = vehiculeRoulant.VitesseMaxi.ToString();
+            txbVitesseMini.Text = vehiculeRoulant.VitesseMini.ToString();
         }
 
         private void btnDestruction_Click(object sender, EventArgs e)
         {
-            Veh = null;
+            vehiculeRoulant = null;
             ToggleButtons();
             // 1ère facon de faire : 
             /*
@@ -84,29 +92,27 @@ namespace POO
         {
             try
             {
-
-                // On renseigne les différents champs entre 
+                // On renseigne les différents champs du véhicule avec les valeur rentrée par l'utilisateur dans les textbox
                 try
                 {
-                    Veh.Distance = Convert.ToInt32(txbDistance.Text);
+                    vehiculeRoulant.Distance = Convert.ToInt32(txbDistance.Text);
                 }
                 catch (FormatException)
                 {
                     MessageBox.Show("Erreur dans distance", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txbDistance.Text = Veh.Distance.ToString();
+                    txbDistance.Text = vehiculeRoulant.Distance.ToString();
                     txbDistance.Clear();
                     txbDistance.Focus();
                 }
 
-                Veh.Charge = Convert.ToInt32(txbCharge.Text);
-                Veh.ConsoRef = Convert.ToSingle(txbConsoRef.Text);
-                Veh.Passagers = Convert.ToInt32(txbPassagers.Text);
-                Veh.VitesseMaxi = Convert.ToSingle(txbVitesseMaxi.Text);
-                Veh.VitesseMini = Convert.ToSingle(txbVitesseMini.Text);
-
+                vehiculeRoulant.Charge = Convert.ToInt32(txbCharge.Text);
+                vehiculeRoulant.ConsoRef = Convert.ToSingle(txbConsoRef.Text);
+                vehiculeRoulant.Passagers = Convert.ToInt32(txbPassagers.Text);
+                vehiculeRoulant.VitesseMaxi = Convert.ToSingle(txbVitesseMaxi.Text);
+                vehiculeRoulant.VitesseMini = Convert.ToSingle(txbVitesseMini.Text);
 
                 // Calcul de la consommation
-                txbConsommation.Text = Veh.Consommation().ToString();
+                txbConsommation.Text = vehiculeRoulant.Consommation().ToString();
             }
             catch (DistanceException dex)
             {
@@ -114,7 +120,7 @@ namespace POO
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erreur : "+ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Erreur : " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }
