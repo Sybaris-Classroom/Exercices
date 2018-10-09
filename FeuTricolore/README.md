@@ -1,6 +1,7 @@
 # FeuTricolore
 L'objectif de cet exercice est d'apprendre à utiliser et implémenter un événement.
 ![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/FeuTricolore/CaptureEcran.jpg)
+
 Pour cela il y a 3 étapes :
 
 ## Etape 1 : 
