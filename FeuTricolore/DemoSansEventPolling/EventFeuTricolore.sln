@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventFeuTricolore", "EventFeuTricolore.csproj", "{A5B697F6-D4EF-42FF-8FDD-7E2C1818506F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5B697F6-D4EF-42FF-8FDD-7E2C1818506F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5B697F6-D4EF-42FF-8FDD-7E2C1818506F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5B697F6-D4EF-42FF-8FDD-7E2C1818506F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5B697F6-D4EF-42FF-8FDD-7E2C1818506F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CEB20256-983E-4027-8F7C-B90B70717CEE}
+	EndGlobalSection
+EndGlobal

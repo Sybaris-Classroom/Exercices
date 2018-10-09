@@ -1,0 +1,126 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace EventFeuTricolore
+{
+    /// <summary>
+    /// Cette classe dessine et gère une voiture
+    /// </summary>
+    public class Voiture
+    {
+        #region Champs
+        /// <summary>
+        /// Dessin de la voiture
+        /// </summary>
+        private PictureBox pbxVoiture;
+        /// <summary>
+        /// Point initial du dessin de la voiture avant tout déplacement
+        /// </summary>
+        private Point initialPoint;
+        /// <summary>
+        /// Timer pour gérer l'animation/déplacement
+        /// </summary>
+        private Timer timer;
+        /// <summary>
+        /// Limite en pixel du circuit de la voiture
+        /// </summary>
+        private readonly Rectangle LimitesCircuitVoiture = new Rectangle(0, 0, 400, 250);
+        /// <summary>
+        /// Liste de tous les points où va passer la voiture sur le circuit
+        /// </summary>
+        private List<Point> positionVoitureListe = null;
+        /// <summary>
+        /// Poistion courante dans la liste des points où se situe la voiture
+        /// </summary>
+        private int positionVoitureIndex = 0;
+        #endregion Champs
+
+        /// <summary>
+        /// Constructeur
+        /// </summary>
+        /// <param name="aPictureBox">Dessin de la voiture</param>
+        public Voiture(PictureBox aPictureBox)
+        {
+            pbxVoiture = aPictureBox;
+            initialPoint = pbxVoiture.Location;
+
+            timer = new Timer();
+            timer.Tick += Timer_Tick;
+            timer.Interval = 1;
+        }
+
+        /// <summary>
+        /// Il faut déplacer la voiture
+        /// </summary>
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            timer.Stop();
+            VoiturePositionSuivante();
+            timer.Start();
+        }
+
+        /// <summary>
+        /// Démarre la voiture
+        /// </summary>
+        public void Start()
+        {
+            timer.Start();
+        }
+
+        /// <summary>
+        /// Stoppe la voiture
+        /// </summary>
+        public void Stop()
+        {
+            timer.Stop();
+        }
+
+        /// <summary>
+        /// Calcule tous les points du circuit de la voiture
+        /// </summary>
+        IEnumerable<Point> PositionVoiture()
+        {
+            // Notez ici l'utilisation du yield return --> C.F. Demo yield return
+            for (int i = LimitesCircuitVoiture.Left; i < LimitesCircuitVoiture.Right; i++)
+                yield return new Point(i, LimitesCircuitVoiture.Top);
+            for (int i = LimitesCircuitVoiture.Top; i < LimitesCircuitVoiture.Bottom; i++)
+                yield return new Point(LimitesCircuitVoiture.Right, i);
+            for (int i = LimitesCircuitVoiture.Right; i > LimitesCircuitVoiture.Left; i--)
+                yield return new Point(i, LimitesCircuitVoiture.Bottom);
+            for (int i = LimitesCircuitVoiture.Bottom; i > LimitesCircuitVoiture.Top; i--)
+                yield return new Point(LimitesCircuitVoiture.Left, i);
+        }
+
+        /// <summary>
+        /// Positionne la voiture sur le point suivant
+        /// </summary>
+        private void VoiturePositionSuivante()
+        {
+            // Lors du premier appel, initialise la liste des points
+            if (positionVoitureListe == null)
+            {
+                // La méthode d'extension ToList() fait évaluer complètement l'énumération, et donc stocke 
+                // en mémoire la liste de tous les points par lesquels la voiture doit passer.
+                positionVoitureListe = PositionVoiture().ToList();
+            }
+
+            // Si on a fait le tour du circuit, on recommence depuis le début
+            if (positionVoitureIndex >= positionVoitureListe.Count)
+                positionVoitureIndex = 0;
+            
+            // Déplace l'image à la position voulue
+            Point position = positionVoitureListe[positionVoitureIndex];
+            pbxVoiture.Left = initialPoint.X + position.X;
+            pbxVoiture.Top = initialPoint.Y + position.Y;
+
+            // On peut passer à la position suivante de la liste
+            positionVoitureIndex++;
+        }
+
+    }
+}
