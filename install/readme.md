@@ -19,9 +19,9 @@ Attention, le téléchargement et l'installation peuvent être assez longs (comptez
 ![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/install/vs3.png)
 
 ## Module linguistique
-J'utilise Visual Studio en langue anglaise durant mes cours. Je vous invite vivement à parametrer votre Visual Studio aussi en anglais.
+J'utilise Visual Studio en langue anglaise durant mes cours. Je vous invite vivement à paramétrer votre Visual Studio aussi en anglais.
 Cela facilitera votre suivi de la formation.
-Lancez Visual Studio, et allez dans le menu Tools/Options/Environment/Internation Settings/Language. Choisir english.
+Lancez Visual Studio, et allez dans le menu Tools/Options/Environment/Internation Settings/Language. Choisir "English".
 Relancer Visual Studio, désormais, il doit être en anglais.
 
 ![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/install/vs4.png)
