@@ -65,6 +65,27 @@ namespace CommandLineParser
         }
 
         /// <summary>
+        /// This code is here to help you to display (and format) the helptext of the Doc attribute
+        /// </summary>
+        /// <param name="aHelpText">HelpText to display from Doc attribute</param>
+        public void DisplayHelpDoc(string aHelpText)
+        {
+            m_logger.Info(aHelpText);
+        }
+
+        /// <summary>
+        /// This code is here to help you to display (and format) the data from the Option attribute
+        /// </summary>
+        /// <param name="aShortName">Short Name to display from Option attribute (1 char to define the Option/Parameter)</param>
+        /// <param name="aLongName">Long Name to display from Option attribute (string to define the Option/Parameter)</param>
+        /// <param name="aHelpText">HelpText to display from Option attribute</param>
+        public void DisplayHelpOption(char aShortName, string aLongName, string aHelpText)
+        {
+            string message = "-" + aShortName.ToString() + " or --" + aLongName;
+            m_logger.Info(message.PadRight(25) + "  : " + aHelpText);
+        }
+
+        /// <summary>
         /// Parse command line and return an instance on T filled with the values read from command line
         /// </summary>
         /// <param name="args">Command line arguments from main</param>
@@ -78,9 +99,9 @@ namespace CommandLineParser
             // Create an instance of the result --> At this step, first make the TODO 4 bis
             // Get all properties of T
             // Loop on each property
-            //   Search if there is an attribute on the property
-            //   If there is an attribute of type  OptionAttribute retreive it
-            //   Retreive the value associated to the property/option a,d use "GetValueFromCommandLine" for that
+            //   Retreive the custom attribute (Option) of the property 
+            //   If there is no attribute, continue the loop
+            //   Retreive the value associated to the property/option and use the provided "GetValueFromCommandLine" method for that
             //   Check if parameter is Required or not
             //   Set the value in the correct result field
             // Return the result
@@ -101,13 +122,13 @@ namespace CommandLineParser
             // TODO 3 : The goal of this method is to display help using HelpText of Doc and Option attributes.
             // You will found here the steps to do this :
 
-            // Get the attribute of the class (Doc)
-            // Display the header (Helptext of Doc attribute on the class)
+            // Get the attribute (Doc) of the class T (In our example T is CommandLineOptions)
+            // Display the header (Helptext of Doc attribute on the class) using provided "DisplayHelpDoc" method
             // List all the properties of T
             // Loop on all these properties
-            //   Retreive the custom attributes of the property 
-            //   If there is several attribute, take the OptionAttribute and retreive it
-            //   Display the message using Logger
+            //   Retreive the custom attribute (Option) of the property 
+            //   If there is no attribute, continue the loop
+            //   Display the message using provided "DisplayHelpOption" method
         }
 
     }

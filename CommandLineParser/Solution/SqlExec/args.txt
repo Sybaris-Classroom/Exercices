@@ -1,8 +1,8 @@
 ﻿Tests that must be OK and return 2 files found :
 ------------------------------------------------
-1°/ -S . -U sa -P password -D MyDb -F .\SqlFiles\
-2°/ --Server . --User sa --Password password --DatabaseName MyDb --Folder .\SqlFiles\
-3°/ -S . -U sa --Password password --DatabaseName MyDb --Folder .\SqlFiles\
+1°/ -S localhost -U sa -P password -D MyDb -F .\SqlFiles\
+2°/ --Server localhost --User sa --Password password --DatabaseName MyDb --Folder .\SqlFiles\
+3°/ -S localhost -U sa --Password password --DatabaseName MyDb --Folder .\SqlFiles\
 
 Test that must be OK and display help :
 ---------------------------------------
@@ -10,7 +10,7 @@ Test that must be OK and display help :
 
 Tests that must return an error : 
 ----------------------------------
-1°/ -S . -U sa -P password -D MyDb -F
+1°/ -S localhost -U sa -P password -D MyDb -F
 Missing a value for the parameter 'F' or Folder
-2°/ -S . -U sa -P password -F .\SqlFiles\
+2°/ -S localhost -U sa -P password -F .\SqlFiles\
 The required parameter -D or --DatabaseName is missing.

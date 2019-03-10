@@ -65,6 +65,27 @@ namespace CommandLineParser
         }
 
         /// <summary>
+        /// This code is here to help you to display (and format) the helptext of the Doc attribute
+        /// </summary>
+        /// <param name="aHelpText">HelpText to display from Doc attribute</param>
+        public void DisplayHelpDoc(string aHelpText)
+        {
+            m_logger.Info(aHelpText);
+        }
+
+        /// <summary>
+        /// This code is here to help you to display (and format) the data from the Option attribute
+        /// </summary>
+        /// <param name="aShortName">Short Name to display from Option attribute (1 char to define the Option/Parameter)</param>
+        /// <param name="aLongName">Long Name to display from Option attribute (string to define the Option/Parameter)</param>
+        /// <param name="aHelpText">HelpText to display from Option attribute</param>
+        public void DisplayHelpOption(char aShortName, string aLongName, string aHelpText)
+        {
+            string message = "-" + aShortName.ToString() + " or --" + aLongName;
+            m_logger.Info(message.PadRight(25) + "  : " + aHelpText);
+        }
+
+        /// <summary>
         /// Parse command line and return an instance on T filled with the values read from command line
         /// </summary>
         /// <param name="args">Command line arguments from main</param>
@@ -80,25 +101,22 @@ namespace CommandLineParser
             // Loop on each property
             foreach (PropertyInfo pi in pis)
             {
-                // Search if there is an attribute on the property
-                object[] attributes = pi.GetCustomAttributes(true);
-                foreach (object attr in attributes)
-                    if (attr is OptionAttribute)
-                    {
-                        // There is an attribute of type OptionAttribute
-                        OptionAttribute cmdAttribute = (attr as OptionAttribute);
-                        Debug.Assert(cmdAttribute != null);
+                // Retreive the custom attribute (Option) of the property 
+                OptionAttribute optionAttribute = pi.GetCustomAttribute<OptionAttribute>();
 
-                        // Retreive the value associated to the property/option
-                        object value = GetValueFromCommandLine(args, cmdAttribute.ShortName, cmdAttribute.LongName, pi.PropertyType);
+                // If there is no attribute, continue the loop
+                if (optionAttribute == null)
+                    continue;
 
-                        // Check if parameter is Required or not
-                        if (cmdAttribute.Required && value == null)
-                            throw new Exception("The required parameter -" + cmdAttribute.ShortName.ToString() + " or --" + cmdAttribute.LongName + " is missing.");
+                // Retreive the value associated to the property/option
+                object value = GetValueFromCommandLine(args, optionAttribute.ShortName, optionAttribute.LongName, pi.PropertyType);
 
-                        // Set the value in the correct result field
-                        pi.SetValue(result, value);
-                    }
+                // Check if parameter is Required or not
+                if (optionAttribute.Required && value == null)
+                    throw new Exception("The required parameter -" + optionAttribute.ShortName.ToString() + " or --" + optionAttribute.LongName + " is missing.");
+
+                // Set the value in the correct result field
+                pi.SetValue(result, value);
             }
 
             // Return the result
@@ -112,36 +130,32 @@ namespace CommandLineParser
         /// </summary>
         public void DisplayHelp()
         {
-            // Get the attribute of the class
-            object[] classAttributes = typeof(T).GetCustomAttributes(typeof(DocAttribute), true);
-            Debug.Assert(classAttributes != null, "You must have a Doc Attribute on the class");
-            Debug.Assert(classAttributes.Length == 1);
-            DocAttribute doc = classAttributes[0] as DocAttribute;
 
-            // Display the header (Helptext of Doc attribute on the class)
-            m_logger.Info(doc.HelpText);
+            // The goal of this method is to display help using HelpText of Doc and Option attributes.
+            // Get the attribute (Doc) of the class T (In our example T is CommandLineOptions)
+            DocAttribute docAttr = typeof(T).GetCustomAttribute<DocAttribute>();
+
+            // This is to check if we have an expected attribute document on the class
+            Debug.Assert(docAttr != null, "You must have a Doc Attribute on the class");
+
+            // Display the header (Helptext of Doc attribute on the class) using provided DisplayHelpDoc method
+            DisplayHelpDoc(docAttr.HelpText);
 
             // List all the properties of T
             PropertyInfo[] pis = typeof(T).GetProperties();
 
-            // Loop on all properties
+            // Loop on all these properties
             foreach (PropertyInfo pi in pis)
             {
-                // Check the custom attributes of the property
-                object[] attributes = pi.GetCustomAttributes(true);
+                // Retreive the custom attribute (Option) of the property 
+                OptionAttribute optionAttribute = pi.GetCustomAttribute<OptionAttribute>();
 
-                // If there is several attribute, take the OptionAttribute
-                foreach (object attr in attributes)
-                    if (attr is OptionAttribute)
-                    {
-                        // Retreive the OptionAttribute
-                        OptionAttribute cmdAttribute = attr as OptionAttribute;
-                        Debug.Assert(cmdAttribute != null);
+                // If there is no attribute, continue the loop
+                if (optionAttribute == null)
+                    continue;
 
-                        // Display the message
-                        string message = "-" + cmdAttribute.ShortName.ToString() + " or --" + cmdAttribute.LongName;
-                        m_logger.Info(message.PadRight(25) + "  : " + cmdAttribute.HelpText);
-                    }
+                //   Display the message using provided DisplayHelpOption method
+                DisplayHelpOption(optionAttribute.ShortName, optionAttribute.LongName, optionAttribute.HelpText);
             }
         }
 

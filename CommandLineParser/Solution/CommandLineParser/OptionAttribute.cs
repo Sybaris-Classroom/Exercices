@@ -23,7 +23,7 @@ namespace CommandLineParser
         /// </summary>
         public char ShortName { get; private set; }
         /// <summary>
-        /// Long Name (1 char to define the Option/Parameter)
+        /// Long Name (string to define the Option/Parameter)
         /// </summary>
         public string LongName { get; private set; }
 
