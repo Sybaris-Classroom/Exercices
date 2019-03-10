@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlExec", "SqlExec\SqlExec.csproj", "{B2637F2A-C932-47D2-B340-EFC8EB40A178}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandLineParser", "CommandLineParser\CommandLineParser.csproj", "{DF0560A7-5CCD-4D32-920C-E5835FE23C76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlExec.UnitTests", "SqlExec.UnitTests\SqlExec.UnitTests.csproj", "{A85CDD01-9224-40A5-A25C-7F2C240FF2EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,15 @@ Global
 		{DF0560A7-5CCD-4D32-920C-E5835FE23C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF0560A7-5CCD-4D32-920C-E5835FE23C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF0560A7-5CCD-4D32-920C-E5835FE23C76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A85CDD01-9224-40A5-A25C-7F2C240FF2EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A85CDD01-9224-40A5-A25C-7F2C240FF2EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A85CDD01-9224-40A5-A25C-7F2C240FF2EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A85CDD01-9224-40A5-A25C-7F2C240FF2EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48E37E8A-C232-49E1-A64D-30C2AF64D4A0}
 	EndGlobalSection
 EndGlobal

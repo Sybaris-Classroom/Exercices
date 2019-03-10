@@ -1,12 +1,12 @@
-﻿Tests that must be OK and return 2 files found :
+﻿Test that must be OK and display help :
+---------------------------------------
+1°/ (empty)
+
+Tests that must be OK and return 2 files found :
 ------------------------------------------------
 1°/ -S localhost -U sa -P password -D MyDb -F .\SqlFiles\
 2°/ --Server localhost --User sa --Password password --DatabaseName MyDb --Folder .\SqlFiles\
 3°/ -S localhost -U sa --Password password --DatabaseName MyDb --Folder .\SqlFiles\
-
-Test that must be OK and display help :
----------------------------------------
-1°/ (empty)
 
 Tests that must return an error : 
 ----------------------------------

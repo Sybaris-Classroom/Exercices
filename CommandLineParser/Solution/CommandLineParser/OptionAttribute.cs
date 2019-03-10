@@ -5,6 +5,7 @@ namespace CommandLineParser
     /// <summary>
     /// Class to define an Attribute "Option"
     /// </summary>
+    [System.AttributeUsage(System.AttributeTargets.Property)] // To limit the usage of this attribute on properties only
     public class OptionAttribute : Attribute
     {
         /// <summary>

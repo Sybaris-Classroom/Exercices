@@ -5,6 +5,7 @@ namespace CommandLineParser
     /// <summary>
     /// Class to define a Doc "Option"
     /// </summary>
+    [System.AttributeUsage(System.AttributeTargets.Class)] // To limit the usage of this attribute on class only
     public class DocAttribute : Attribute
     {
         /// <summary>

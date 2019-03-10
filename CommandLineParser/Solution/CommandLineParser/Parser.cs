@@ -113,7 +113,7 @@ namespace CommandLineParser
 
                 // Check if parameter is Required or not
                 if (optionAttribute.Required && value == null)
-                    throw new Exception("The required parameter -" + optionAttribute.ShortName.ToString() + " or --" + optionAttribute.LongName + " is missing.");
+                    throw new Exception($"The required parameter -{optionAttribute.ShortName.ToString()} or --{optionAttribute.LongName} is missing.");
 
                 // Set the value in the correct result field
                 pi.SetValue(result, value);
