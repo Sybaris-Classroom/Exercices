@@ -1,8 +1,9 @@
-# Installation de Visual Studio 2017.
+# Installation de Visual Studio 2019.
 Je vous recommande d'installer Visual Studio avec les options suivantes afin de suivre au mieux ma formation.
 Le processus de téléchargement et d'installation étant assez long, je vous invite à l'effectuer à l'avance, afin que votre PC soit prêt avant le début de la formation.
+Attention, "Visual Studio" et "Visual Studio Code" sont 2 produits très différents. Nous utiliserons le 1er pour cette formation.
 
-## Télécharger Visual Studio 2017 Community :
+## Télécharger Visual Studio 2019 Community :
 A l'url suivante : https://visualstudio.microsoft.com/fr/downloads/
 et lancer l'installation.
 Attention, le téléchargement et l'installation peuvent être assez longs (comptez 3 heures...)
