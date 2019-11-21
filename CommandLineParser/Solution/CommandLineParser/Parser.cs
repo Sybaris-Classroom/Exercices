@@ -85,6 +85,8 @@ namespace CommandLineParser
             m_logger.Info(message.PadRight(25) + "  : " + aHelpText);
         }
 
+        const string REQUIRED_PARAMETER_MISSING_EXCEPTION_TEXT = "The required parameter -{0} or --{1} is missing.";
+
         /// <summary>
         /// Parse command line and return an instance on T filled with the values read from command line
         /// </summary>
@@ -111,9 +113,9 @@ namespace CommandLineParser
                 // Retreive the value associated to the property/option
                 object value = GetValueFromCommandLine(args, optionAttribute.ShortName, optionAttribute.LongName, pi.PropertyType);
 
-                // Check if parameter is Required or not
+                // Check if parameter is Required or not (using the text from REQUIRED_PARAMETER_MISSING_EXCEPTION_TEXT string)
                 if (optionAttribute.Required && value == null)
-                    throw new Exception($"The required parameter -{optionAttribute.ShortName.ToString()} or --{optionAttribute.LongName} is missing.");
+                    throw new Exception(string.Format(REQUIRED_PARAMETER_MISSING_EXCEPTION_TEXT,optionAttribute.ShortName.ToString(),optionAttribute.LongName));
 
                 // Set the value in the correct result field
                 pi.SetValue(result, value);

@@ -85,6 +85,8 @@ namespace CommandLineParser
             m_logger.Info(message.PadRight(25) + "  : " + aHelpText);
         }
 
+        const string REQUIRED_PARAMETER_MISSING_EXCEPTION_TEXT = "The required parameter -{0} or --{1} is missing.";
+
         /// <summary>
         /// Parse command line and return an instance on T filled with the values read from command line
         /// </summary>
@@ -102,7 +104,7 @@ namespace CommandLineParser
             //   Retreive the custom attribute (Option) of the property 
             //   If there is no attribute, continue the loop
             //   Retreive the value associated to the property/option and use the provided "GetValueFromCommandLine" method for that
-            //   Check if parameter is Required or not
+            //   Check if parameter is Required or not (using the text from REQUIRED_PARAMETER_MISSING_EXCEPTION_TEXT string)
             //   Set the value in the correct result field
             // Return the result
 
