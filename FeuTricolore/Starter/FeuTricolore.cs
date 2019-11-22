@@ -15,6 +15,7 @@ namespace EventFeuTricolore
     {
         // TODO 2 : Résumé : 
         //          L'objectif est de créer un événement qui signale le changement de couleur/d'état du feu.
+		//          Pour la syntaxe, voir : https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines
         //          L'idée est que la voiture pourra s'abonner à cet événement.
         //          Dans la 1ère partie vous avez utilisé (abonné) l'événement du timer
         //          Dans cette 2ème partie, on va créer un nouvel événement (ColorChanged) afin de voir comment on implémente un événement.
@@ -82,7 +83,7 @@ namespace EventFeuTricolore
             //          Ici l'objectif est de faire fonctionner le feu tricolore. Pour cela on va utiliser un Timer.
             //          Le timer va permettre d'attendre une certaine durée entre chaque changement de couleur du feu.
 
-            // TODO 1a : Créer le timer 
+            // TODO 1a : Créer le timer (Ex : https://docs.microsoft.com/fr-fr/dotnet/api/system.windows.forms.timer?view=netframework-4.8)
 
             // TODO 1b : S'abonner à l'événement Tick
             //           Lorsque l'événement se déclenche il faut réaliser les actions suivantes :
