@@ -18,6 +18,8 @@ namespace Demos
             //Nullable.Run();
             //YieldReturn.Run();
             //StringCompareTo.Run();
+            //AppConfigSettings.Run();
+
             // Methode d'extension
             //Personne p = new Personne() { Nom = "Planas",Prenom = "Jean-Pierre" };
             //Console.WriteLine(p.NomPrenom);
@@ -43,7 +45,16 @@ namespace Demos
             // Quizz : Boxing
             //Boxing.RunAllSteps();
 
-            //AppConfigSettings.Run();
+            // Quizz : Multithreading
+            //Multithreading.Quizz1.Run();
+            //Multithreading.Quizz2.Run();
+            //Multithreading.Quizz3.Run();
+            //Multithreading.Quizz4.Run();
+            //Multithreading.Quizz5.Run();
+            //Multithreading.Quizz6.Run();
+            //Multithreading.Quizz7.Run();
+            //Console.WriteLine("Quizz 8 prvoque un deadlock...");
+            //Multithreading.Quizz8.Run();
 
             Console.WriteLine("Appuyez sur une touche pour quitter le programme...");
             Console.ReadKey();

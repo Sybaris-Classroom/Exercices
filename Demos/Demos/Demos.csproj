@@ -35,6 +35,8 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,6 +53,27 @@
     <Compile Include="Linq.cs" />
     <Compile Include="LogsDebugTrace.cs" />
     <Compile Include="MethodeExtension.cs" />
+    <Compile Include="Multithreading\FormQuizz7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Multithreading\FormQuizz7.Designer.cs">
+      <DependentUpon>FormQuizz7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Multithreading\FormQuizz8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Multithreading\FormQuizz8.Designer.cs">
+      <DependentUpon>FormQuizz8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Multithreading\Quizz1.cs" />
+    <Compile Include="Multithreading\Quizz2.cs" />
+    <Compile Include="Multithreading\Quizz3.cs" />
+    <Compile Include="Multithreading\Quizz4.cs" />
+    <Compile Include="Multithreading\Quizz5.cs" />
+    <Compile Include="Multithreading\Quizz6.cs" />
+    <Compile Include="Multithreading\Quizz7.cs" />
+    <Compile Include="Multithreading\Quizz8.cs" />
+    <Compile Include="Multithreading\QuizzAll.cs" />
     <Compile Include="Nullable.cs" />
     <Compile Include="PassageDeParametres\Quizz2.cs" />
     <Compile Include="PassageDeParametres\Quizz3.cs" />
@@ -84,6 +107,16 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Multithreading\FormQuizz7.resx">
+      <DependentUpon>FormQuizz7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Multithreading\FormQuizz8.resx">
+      <DependentUpon>FormQuizz8.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AsyncAwait\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
