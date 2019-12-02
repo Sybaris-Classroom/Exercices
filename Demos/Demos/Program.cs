@@ -8,7 +8,6 @@ namespace Demos
 {
     class Program
     {
-
         static void Main(string[] args)
         {
             //Collections.Run();
@@ -55,6 +54,14 @@ namespace Demos
             //Multithreading.Quizz7.Run();
             //Console.WriteLine("Quizz 8 prvoque un deadlock...");
             //Multithreading.Quizz8.Run();
+
+            // Quizz : AsyncAwait
+            //AsyncAwait.Quizz1.Run();
+            //AsyncAwait.Quizz2.Run();
+            //AsyncAwait.Quizz3.Run();
+            //AsyncAwait.Quizz4.Run();
+            //AsyncAwait.Quizz4Bis.Run();
+            AsyncAwait.Quizz5.Run();
 
             Console.WriteLine("Appuyez sur une touche pour quitter le programme...");
             Console.ReadKey();

@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27428.2043
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demos", "Demos\Demos.csproj", "{7A070E7E-AD95-42C1-AF07-076DA042AADA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelAutomation", "ExcelAutomation\ExcelAutomation.csproj", "{59AA30F0-D8C1-4880-B7B3-526FC79B9D10}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfButtonDesign", "WpfButtonDesign\WpfButtonDesign.csproj", "{53ED6007-E38C-4F2C-8E64-99B2AED81D75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoUT", "DemoUT\DemoUT.csproj", "{B54CBDA6-DC98-47A5-A8DD-DD5F8AC27D1D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{53ED6007-E38C-4F2C-8E64-99B2AED81D75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53ED6007-E38C-4F2C-8E64-99B2AED81D75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53ED6007-E38C-4F2C-8E64-99B2AED81D75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B54CBDA6-DC98-47A5-A8DD-DD5F8AC27D1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B54CBDA6-DC98-47A5-A8DD-DD5F8AC27D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B54CBDA6-DC98-47A5-A8DD-DD5F8AC27D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B54CBDA6-DC98-47A5-A8DD-DD5F8AC27D1D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

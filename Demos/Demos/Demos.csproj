@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.2.0.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSTest.TestFramework.2.0.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -46,6 +52,37 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppConfigSettings.cs" />
+    <Compile Include="AsyncAwait\FormQuizz2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsyncAwait\FormQuizz2.Designer.cs">
+      <DependentUpon>FormQuizz2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncAwait\FormQuizz3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsyncAwait\FormQuizz3.Designer.cs">
+      <DependentUpon>FormQuizz3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncAwait\FormQuizz4Bis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsyncAwait\FormQuizz4Bis.Designer.cs">
+      <DependentUpon>FormQuizz4Bis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncAwait\FormQuizz5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsyncAwait\FormQuizz5.Designer.cs">
+      <DependentUpon>FormQuizz5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsyncAwait\Quizz1.cs" />
+    <Compile Include="AsyncAwait\Quizz3.cs" />
+    <Compile Include="AsyncAwait\Quizz2.cs" />
+    <Compile Include="AsyncAwait\Quizz4.cs" />
+    <Compile Include="AsyncAwait\Quizz4Bis.cs" />
+    <Compile Include="AsyncAwait\Quizz5.cs" />
+    <Compile Include="AsyncAwait\Quizz6.cs" />
     <Compile Include="Boxing.cs" />
     <Compile Include="Collections.cs" />
     <Compile Include="Delegates.cs" />
@@ -102,12 +139,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AsyncAwait\FormQuizz2.resx">
+      <DependentUpon>FormQuizz2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsyncAwait\FormQuizz3.resx">
+      <DependentUpon>FormQuizz3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsyncAwait\FormQuizz4Bis.resx">
+      <DependentUpon>FormQuizz4Bis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsyncAwait\FormQuizz5.resx">
+      <DependentUpon>FormQuizz5.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Multithreading\FormQuizz7.resx">
       <DependentUpon>FormQuizz7.cs</DependentUpon>
     </EmbeddedResource>
@@ -116,7 +166,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AsyncAwait\" />
+    <Folder Include="Linq\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
