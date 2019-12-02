@@ -61,7 +61,14 @@ namespace Demos
             //AsyncAwait.Quizz3.Run();
             //AsyncAwait.Quizz4.Run();
             //AsyncAwait.Quizz4Bis.Run();
-            AsyncAwait.Quizz5.Run();
+            //AsyncAwait.Quizz5.Run();
+            //For AsyncAwait.Quizz6 use Unit tests
+
+            // Quizz : Linq
+            //Linq.Quizz1.Run();
+            //Linq.Quizz2.Run();
+            //Linq.Quizz3.Run();
+            Linq.Quizz4.Run();
 
             Console.WriteLine("Appuyez sur une touche pour quitter le programme...");
             Console.ReadKey();

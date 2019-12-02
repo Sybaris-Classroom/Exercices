@@ -87,7 +87,10 @@
     <Compile Include="Collections.cs" />
     <Compile Include="Delegates.cs" />
     <Compile Include="DelegatesLogPerf.cs" />
-    <Compile Include="Linq.cs" />
+    <Compile Include="Linq\Quizz1.cs" />
+    <Compile Include="Linq\Quizz2.cs" />
+    <Compile Include="Linq\Quizz3.cs" />
+    <Compile Include="Linq\Quizz4.cs" />
     <Compile Include="LogsDebugTrace.cs" />
     <Compile Include="MethodeExtension.cs" />
     <Compile Include="Multithreading\FormQuizz7.cs">
@@ -165,8 +168,6 @@
       <DependentUpon>FormQuizz8.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Linq\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
