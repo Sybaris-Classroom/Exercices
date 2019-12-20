@@ -6,19 +6,16 @@ using System.Threading.Tasks;
 
 namespace Demos.Linq
 {
-    public class Quizz4
+    public class Quizz9
     {
-
         static string[] colors = { "green", "brown", "blue", "red" };
 
         public static void Run()
         {
-            var query =     from c in colors
-                            where c.Length == colors.Max(c2 => c2.Length)
-                            select c;
+            var query = colors.Where(c => c.Contains("e"));
+            query = query.Where(c => c.Contains("n"));
 
-            foreach (var element in query)
-                Console.WriteLine(element);
+            Console.WriteLine(query.Count());
         }
     }
 }

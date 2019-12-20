@@ -68,7 +68,12 @@ namespace Demos
             //Linq.Quizz1.Run();
             //Linq.Quizz2.Run();
             //Linq.Quizz3.Run();
-            Linq.Quizz4.Run();
+            //Linq.Quizz4et5.Run();
+            //Linq.Quizz6.Run();
+            //Linq.Quizz7.Run();
+            //Linq.Quizz8.Run();
+            //Linq.Quizz9.Run();
+            Linq.Quizz10.Run();
 
             Console.WriteLine("Appuyez sur une touche pour quitter le programme...");
             Console.ReadKey();

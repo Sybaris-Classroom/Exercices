@@ -23,7 +23,7 @@ namespace Demos.Multithreading
         private void FormQuizz8_Load(object sender, EventArgs e)
         {
             Text = "Text1";
-            Task.Run(UpdateUIByInvoke);
+            Task.Run(new Action(UpdateUIByInvoke));
             Thread.Sleep(100);
             lock (A) { };
         }

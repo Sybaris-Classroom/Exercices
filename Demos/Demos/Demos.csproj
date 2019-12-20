@@ -90,7 +90,12 @@
     <Compile Include="Linq\Quizz1.cs" />
     <Compile Include="Linq\Quizz2.cs" />
     <Compile Include="Linq\Quizz3.cs" />
-    <Compile Include="Linq\Quizz4.cs" />
+    <Compile Include="Linq\Quizz4et5.cs" />
+    <Compile Include="Linq\Quizz7.cs" />
+    <Compile Include="Linq\Quizz6.cs" />
+    <Compile Include="Linq\Quizz10.cs" />
+    <Compile Include="Linq\Quizz9.cs" />
+    <Compile Include="Linq\Quizz8.cs" />
     <Compile Include="LogsDebugTrace.cs" />
     <Compile Include="MethodeExtension.cs" />
     <Compile Include="Multithreading\FormQuizz7.cs">
