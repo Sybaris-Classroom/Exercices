@@ -13,10 +13,12 @@ Attention, le téléchargement et l'installation peuvent être assez longs (comptez
 - Développement pour la plateforme Windows universelle
 - Développement web et ASP.NET
 - Développement multiplateforme .NET Core
+- Composant individuels : "Windows Communication Foundation"
 - Module linguistiques "Anglais"
 
 ![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/install/vs1.png)
 ![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/install/vs2.png)
+![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/install/vs-wcf.jpg)
 ![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/install/vs3.png)
 
 ## Module linguistique
