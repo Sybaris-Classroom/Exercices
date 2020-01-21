@@ -5,6 +5,7 @@ L'idée d'être le plus rapide pour découvrir ce mot.
 
 ## Installation
 1 - Clonner ou télécharger ce repository (ou le contenu de ce dossier) sur votre poste dans C:\TP\ChasseAuTresor
+
 2 - Vérifier que le dossier C:\TP\ChasseAuTresor contienne bien le fichier "Formation.asmx"
 3 - Lancer la ligne de commande suivante : "C:\Program Files (x86)\IIS Express\iisexpress.exe" /path:"C:\TP\ChasseAuTresor"
 
