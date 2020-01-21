@@ -4,10 +4,9 @@ L'objectif de cet exercice est au travers d'un jeu de piste de découvrir un mot
 L'idée d'être le plus rapide pour découvrir ce mot.
 
 ## Installation
-1 - Clonner ou télécharger ce repository (ou le contenu de ce dossier) sur votre poste dans C:\TP\ChasseAuTresor
-
-2 - Vérifier que le dossier C:\TP\ChasseAuTresor contienne bien le fichier "Formation.asmx"
-3 - Lancer la ligne de commande suivante : "C:\Program Files (x86)\IIS Express\iisexpress.exe" /path:"C:\TP\ChasseAuTresor"
+- Clonner ou télécharger ce repository (ou le contenu de ce dossier) sur votre poste dans C:\TP\ChasseAuTresor
+- Vérifier que le dossier C:\TP\ChasseAuTresor contienne bien le fichier "Formation.asmx"
+- Lancer la ligne de commande suivante : "C:\Program Files (x86)\IIS Express\iisexpress.exe" /path:"C:\TP\ChasseAuTresor"
 
 ## Le jeu
 Un VIEUX (asmx) web service se cache derrière cette URL : http://localhost:8080/formation.asmx
