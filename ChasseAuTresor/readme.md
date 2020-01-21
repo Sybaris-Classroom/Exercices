@@ -1,16 +1,16 @@
-#Chasse au trésor
+#Chasse au trÃ©sor
 
-L'objectif de cet exercice est au travers d'un jeu de piste de découvrir un mot caché.
-L'idée d'être le plus rapide pour découvrir ce mot.
+L'objectif de cet exercice est au travers d'un jeu de piste de dÃ©couvrir un mot cachÃ©.
+L'idÃ©e d'Ãªtre le plus rapide pour dÃ©couvrir ce mot.
 
 ##Installation
-1 - Clonner ou télécharger ce repository (ou le contenu de ce dossier) sur votre poste dans C:\TP\ChasseAuTresor
-2 - Vérifier que le dossier C:\TP\ChasseAuTresor contienne bien le fichier "Formation.asmx"
+1 - Clonner ou tÃ©lÃ©charger ce repository (ou le contenu de ce dossier) sur votre poste dans C:\TP\ChasseAuTresor
+2 - VÃ©rifier que le dossier C:\TP\ChasseAuTresor contienne bien le fichier "Formation.asmx"
 3 - Lancer la ligne de commande suivante : "C:\Program Files (x86)\IIS Express\iisexpress.exe" /path:"C:\TP\ChasseAuTresor"
 
 ##Le jeu
-Un VIEUX (asmx) web service se cache derrière cette URL : http://localhost:8080/formation.asmx
-Veuillez faire un client C# à ce web service pour l'interroger.
+Un VIEUX (asmx) web service se cache derriÃ¨re cette URL : http://localhost:8080/formation.asmx
+Veuillez faire un client C# Ã  ce web service pour l'interroger.
 Pour cela recherchez sur internet comment consommer un web service de type asmx en C#.
 Voici un indice :
 https://www.aspsnippets.com/Articles/Call-Consume-Web-Service-ASMX-in-Console-application-using-C-and-VBNet.aspx
@@ -22,4 +22,4 @@ https://www.aspsnippets.com/Articles/Call-Consume-Web-Service-ASMX-in-Console-ap
 4 - Reflection
 
 ##Solution
-Vous trouverez la solution à ce jeu dans le fichier "ChasseAuTresor - Solution Cryptee.7z" qui est crypté avec le mot de passe à découvrir à la fin de ce jeu...
+Vous trouverez la solution Ã  ce jeu dans le fichier "ChasseAuTresor - Solution Cryptee.7z" qui est cryptÃ© avec le mot de passe Ã  dÃ©couvrir Ã  la fin de ce jeu...
