@@ -16,10 +16,10 @@ Voici un indice :
 https://www.aspsnippets.com/Articles/Call-Consume-Web-Service-ASMX-in-Console-application-using-C-and-VBNet.aspx
 
 ## Notions vues durant ce jeu
-1 - Web service Asmx
-2 - Cryptographie
-3 - Hacking / Reverse engenering
-4 - Reflection
+- Web service Asmx
+- Cryptographie
+- Hacking / Reverse engenering
+- Reflection
 
 ## Solution
 Vous trouverez la solution à ce jeu dans le fichier "ChasseAuTresor - Solution Cryptee.7z" qui est crypté avec le mot de passe à découvrir à la fin de ce jeu...
