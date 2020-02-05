@@ -40,6 +40,7 @@ namespace Demos
             ////PassageDeParametres.Quizz2.Run();
             ////PassageDeParametres.Quizz3.Run();
             ////PassageDeParametres.Quizz4.Run();
+            PassageDeParametres.Quizz6.Run();
 
             // Quizz : Boxing
             //Boxing.RunAllSteps();
@@ -73,7 +74,7 @@ namespace Demos
             //Linq.Quizz7.Run();
             //Linq.Quizz8.Run();
             //Linq.Quizz9.Run();
-            Linq.Quizz10.Run();
+            //Linq.Quizz10.Run();
 
             Console.WriteLine("Appuyez sur une touche pour quitter le programme...");
             Console.ReadKey();

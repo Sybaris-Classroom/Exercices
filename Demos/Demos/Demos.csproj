@@ -122,6 +122,7 @@
     <Compile Include="Nullable.cs" />
     <Compile Include="PassageDeParametres\Quizz2.cs" />
     <Compile Include="PassageDeParametres\Quizz3.cs" />
+    <Compile Include="PassageDeParametres\Quizz6.cs" />
     <Compile Include="PassageDeParametres\Quizz4.cs" />
     <Compile Include="PassageDeParametres\QuizzAll.cs" />
     <Compile Include="Personne.cs" />

@@ -26,6 +26,9 @@ namespace Demos.PassageDeParametres
             PassageDeParametres.Quizz4.Run();
             Console.WriteLine("******************");
 
+            Console.WriteLine("Quizz6");
+            PassageDeParametres.Quizz4.Run();
+            Console.WriteLine("******************");
         }
     }
 }
