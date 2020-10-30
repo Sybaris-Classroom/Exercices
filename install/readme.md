@@ -30,10 +30,10 @@ Relancer Visual Studio, désormais, il doit être en anglais.
 ![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/install/vs4.png)
 
 ## Raccourcis clavier
-Afin de disposer des raccourcis clavier "classiques" C#, je vous invite à vérifier l'option "keyboard mapping".
+Afin de disposer des raccourcis clavier C# "classiques", je vous invite à vérifier l'option "keyboard mapping".
 Pour cela allez dans le menu Tools/Options/Environment/Keyboard, et vérifiez que l'option est positionnée à la valeur "Visual C# 2005".
 
-![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/install/vs5.png)
+![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/install/vs5.jpg)
 
 ## Conclusion
 Merci de votre participation, et à bientôt pour la suite.
