@@ -8,15 +8,11 @@ namespace POO
 {
     class Voiture : VehiculeRoulant
     {
-        public bool Airbag { get; set; }
+        public bool Airbag { get; set; } = true;
 
         public override float Consommation()
         {
-            return ConsoRef * Distance / 100;
-        }
-        public Voiture(): base()
-        {
-            Airbag = true;
+            return (5 + 0.1f * Passagers) * Distance / 100;
         }
     }
 }

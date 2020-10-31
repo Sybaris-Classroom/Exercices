@@ -54,7 +54,6 @@ namespace POO
             ToggleButtons();
 
             txbCharge.Text = vehiculeRoulant.Charge.ToString();
-            txbConsoRef.Text = vehiculeRoulant.ConsoRef.ToString();
             txbDistance.Text = vehiculeRoulant.Distance.ToString();
             txbPassagers.Text = vehiculeRoulant.Passagers.ToString();
             txbVitesseMaxi.Text = vehiculeRoulant.VitesseMaxi.ToString();
@@ -69,7 +68,6 @@ namespace POO
             /*
             txbCharge.Text = "";
             txbConsommation.Text = "";
-            txbConsoRef.Text = "";
             txbDistance.Text = "";
             txbPassagers.Text = "";
             txbVitesseMaxi.Text = "";
@@ -106,7 +104,6 @@ namespace POO
                 }
 
                 vehiculeRoulant.Charge = Convert.ToInt32(txbCharge.Text);
-                vehiculeRoulant.ConsoRef = Convert.ToSingle(txbConsoRef.Text);
                 vehiculeRoulant.Passagers = Convert.ToInt32(txbPassagers.Text);
                 vehiculeRoulant.VitesseMaxi = Convert.ToSingle(txbVitesseMaxi.Text);
                 vehiculeRoulant.VitesseMini = Convert.ToSingle(txbVitesseMini.Text);

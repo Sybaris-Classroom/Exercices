@@ -12,13 +12,12 @@ namespace POO
 
         public override float Consommation()
         {
-            return (ConsoRef * 2) * Distance / 100;
+            return (12 + Charge / 1000) * Distance / 100;
         }
         public Camion()
             : base()
         {
             VitesseMaxi = 110;
-            VitesseMini = 90;
         }
     }
 }

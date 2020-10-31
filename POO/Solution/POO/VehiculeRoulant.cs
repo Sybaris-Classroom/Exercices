@@ -8,14 +8,11 @@ namespace POO
 {
     abstract class  VehiculeRoulant : VehiculeAMoteur
     {
-        // Ici c'est un champ et non une propriété
-        public int Passagers = 4;
+        public int Passagers { get; set; } = 4;
         public int Charge { get; set; }
-        public float ConsoRef { get; set; }
 
         public VehiculeRoulant():base()
         {
-            ConsoRef = 8.5f;
         }
 
         // abstract = le code de consommation n'est pas dans cette classe, mais dans une classe dérivée

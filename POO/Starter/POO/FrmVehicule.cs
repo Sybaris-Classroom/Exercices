@@ -30,11 +30,13 @@ namespace POO
         // - Voiture
         // - Camion
         // Chaque classe doit être dans un fichier séparé du même nom que la classe
+        
+        // TODO 2 : Faire passer les tests unitaires
 
-        // TODO 2 (Winform/UI) : Dans ce fichier (classe FrmVehicule), coder :
+        // TODO 3 (Winform/UI) : Dans ce fichier (classe FrmVehicule), coder :
         // - Le boutton Creation
         //   - En fonction du choix dans la combobox cbxTypeVehicule, créer le véhicule correspondant.
-        //   - Le stocker sous forme d'un champ de la classe FrmVehicule
+        //   - Le stocker sous forme d'un champ de la classe FrmVehicule (et donc utiliser l'abstraction)
         //   - Renseigner les textbox (sauf consommation) avec les valeurs des champs/propriétés du véhicule précédemment créé
         // - Le boutton Consommation
         //   - Lire les textbox et renseigner les valeurs des champs/propriétés du véhicule précédemment avec la valeur des textbox correspondantes

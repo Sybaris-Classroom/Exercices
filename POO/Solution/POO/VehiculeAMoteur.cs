@@ -34,9 +34,9 @@ namespace POO
 
         protected VehiculeAMoteur(int aDistance, float aVitesseMoyenne, float aVitesseMaxi)
         {
-            Distance = 1000;
-            VitesseMaxi = 180;
-            VitesseMini = 90;
+            Distance = aDistance;
+            VitesseMaxi = aVitesseMoyenne;
+            VitesseMini = aVitesseMaxi;
         }
 
     }

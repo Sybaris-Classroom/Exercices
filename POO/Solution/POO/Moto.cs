@@ -12,7 +12,7 @@ namespace POO
 
         public override float Consommation()
         {
-            return (ConsoRef / 2) * Distance / 100;
+            return 3 * Distance / 100;
         }
     }
 }
