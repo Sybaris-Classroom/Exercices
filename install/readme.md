@@ -17,10 +17,10 @@ Attention, le téléchargement et l'installation peuvent être assez longs (comptez
 - Composant individuels : "Windows Communication Foundation"
 - Module linguistiques "Anglais"
 
-![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/install/vs1.png)
-![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/install/vs2.png)
+![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/install/vs1.jpg)
+![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/install/vs2.jpg)
 ![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/install/vs-wcf.jpg)
-![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/install/vs3.png)
+![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/install/vs3.jpg)
 
 ## 3 - Module linguistique
 J'utilise Visual Studio en langue anglaise durant mes cours. Je vous invite vivement à paramétrer votre Visual Studio aussi en anglais.
