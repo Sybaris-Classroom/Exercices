@@ -22,7 +22,7 @@ namespace EventFeuTricolore
         }
 
         /// <summary>
-        /// Au chargement fu formulaire
+        /// Au chargement du formulaire
         /// </summary>
         private void Form1_Load(object sender, EventArgs e)
         {

@@ -39,9 +39,15 @@ namespace EventFeuTricolore
             //          Bravo vous venez à l'étape 2 de créer votre propre événement
             //          Maintenant il vous faut l'utiliser (abonner)
             // TODO 4a : S'abonner à l'évenement changement de couleur du feu
-            //           Lorsque l'événement se déclenche il faut réaliser les actions suivantes :
+            // TODO 4b : Lorsque l'événement se déclenche il faut réaliser les actions suivantes :
             //           Si la nouvelle couleur est verte, démarrer la voiture
             //           sinon l'arreter.
+
+            // TODO 5 : Bravo vous avez terminé l'exercice. En bonus, vous pouvez regarder la solution "DemoSansEventPolling"
+            //          qui montre une implémentation avec une technique appelée le "polling". Ce type d'implémentation a 
+            //          l'inconvénient de boucler sans arret en demandant à intervalle régulier l'état du feu tricolore.
+            //          Cela surcharge le feu tricolore d'appels qui dans certains scenarios peuvent être problématique.
+            //          De plus cela créé un couplage entre la voiture et le feu tricolore, ce qui rend les classes dépedantes
         }
 
         /// <summary>
