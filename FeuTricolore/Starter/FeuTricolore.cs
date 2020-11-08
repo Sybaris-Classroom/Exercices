@@ -13,7 +13,7 @@ namespace EventFeuTricolore
     /// </summary>
     public class FeuTricolore
     {
-        // TODO 2 : Résumé : 
+        // TODO 3 : Résumé : 
         //          L'objectif est de créer un événement qui signale le changement de couleur/d'état du feu.
 		//          Pour la syntaxe, voir : https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines
         //          L'idée est que la voiture pourra s'abonner à cet événement.
@@ -26,7 +26,7 @@ namespace EventFeuTricolore
         /// <param name="sender">Le feu tricolore qui déclenche l'événement</param>
         /// <param name="newColor">La nouvelle couleur du feu</param>
         /// <param name="oldColor">La précédente couleur du feu</param>
-        // TODO 2a : Déclarer la signature de l'événement. La signature doit avoir 3 paramètres : (FeuTricolore sender, FeuTricoloreEnum newColor, FeuTricoloreEnum oldColor)
+        // TODO 3a : Déclarer la signature de l'événement. La signature doit avoir 3 paramètres : (FeuTricolore sender, FeuTricoloreEnum newColor, FeuTricoloreEnum oldColor)
 
         /// <summary>
         /// Les différents états/couleurs du feu
@@ -56,7 +56,7 @@ namespace EventFeuTricolore
         /// <summary>
         /// Evénement que déclenche le feu tricolore lorsque la couleur change
         /// </summary>
-        // TODO 2b : déclarer l'événement et le nommer "ColorChanged"
+        // TODO 3b : déclarer l'événement et le nommer "ColorChanged"
         /// <summary>
         /// Zone de dessin
         /// </summary>
@@ -79,22 +79,22 @@ namespace EventFeuTricolore
             // Redessine le feu
             DessineFeuTricolore();
 
-            // TODO 1 : Résumé :
+            // TODO 2 : Résumé :
             //          Ici l'objectif est de faire fonctionner le feu tricolore. Pour cela on va utiliser un Timer.
             //          Le timer va permettre d'attendre une certaine durée entre chaque changement de couleur du feu.
 
-            // TODO 1a : Créer le timer (Ex : https://docs.microsoft.com/fr-fr/dotnet/api/system.windows.forms.timer?view=netframework-4.8)
+            // TODO 2a : Créer le timer (Ex : https://docs.microsoft.com/fr-fr/dotnet/api/system.windows.forms.timer?view=netframework-4.8)
 
-            // TODO 1b : S'abonner à l'événement Tick
+            // TODO 2b : S'abonner à l'événement Tick
             //           Lorsque l'événement se déclenche il faut réaliser les actions suivantes :
             //           1°/ Arreter le timer (le temps qu'on change la couleur et qu'on lui parametre le nouveau temps d'attente)
             //           2°/ Modifier la couleur du feu en passant à la couleur suivante (Utiliser la méthode CouleurSuivante())
             //           3°/ Fixer la nouvelle durée d'attente en fonction de la couleur actuelle (Utiliser le dictionnaire DUREE)
             //           4°/ Redémarrer le timer
 
-            // TODO 1c : Fixer le temps imparti au timer avant le déclenchement de l'événement Tick
+            // TODO 2c : Fixer le temps imparti au timer avant le déclenchement de l'événement Tick
 
-            // TODO 1d : Démarre le timer
+            // TODO 2d : Démarre le timer
         }
 
         public void Stop()
@@ -102,7 +102,7 @@ namespace EventFeuTricolore
             // On arrete le feu
             CouleurActuelle = FeuTricoloreEnum.Eteint;
 
-            // TODO 1e : Arreter le timer
+            // TODO 2e : Arreter le timer
         }
 
         /// <summary>
@@ -140,7 +140,7 @@ namespace EventFeuTricolore
                 if (couleurActuelle == value)
                     return;
 
-                // TODO 2c : Si il y a un ou des abonnés à l'événement, lève l'événement ColorChanged
+                // TODO 3c : Si il y a un ou des abonnés à l'événement, lève l'événement ColorChanged
 
                 // Modifie le champ contenant la couleur du feu
                 couleurActuelle = value;

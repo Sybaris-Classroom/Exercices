@@ -28,55 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pbxFeuTricolore = new System.Windows.Forms.PictureBox();
-            this.pbxVoiture = new System.Windows.Forms.PictureBox();
             this.chkGo = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxFeuTricolore)).BeginInit();
+            this.pbxVoiture = new System.Windows.Forms.PictureBox();
+            this.pbxFeuTricolore = new System.Windows.Forms.PictureBox();
+            this.pbxCircuit = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbxVoiture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFeuTricolore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCircuit)).BeginInit();
             this.SuspendLayout();
             // 
-            // pbxFeuTricolore
+            // chkGo
             // 
-            this.pbxFeuTricolore.Location = new System.Drawing.Point(27, 93);
-            this.pbxFeuTricolore.Name = "pbxFeuTricolore";
-            this.pbxFeuTricolore.Size = new System.Drawing.Size(100, 235);
-            this.pbxFeuTricolore.TabIndex = 1;
-            this.pbxFeuTricolore.TabStop = false;
+            this.chkGo.AutoSize = true;
+            this.chkGo.Location = new System.Drawing.Point(40, 75);
+            this.chkGo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.chkGo.Name = "chkGo";
+            this.chkGo.Size = new System.Drawing.Size(57, 24);
+            this.chkGo.TabIndex = 11;
+            this.chkGo.Text = "Go";
+            this.chkGo.UseVisualStyleBackColor = true;
+            this.chkGo.CheckedChanged += new System.EventHandler(this.chkGo_CheckedChanged);
             // 
             // pbxVoiture
             // 
+            this.pbxVoiture.BackColor = System.Drawing.Color.Transparent;
             this.pbxVoiture.Image = global::EventFeuTricolore.Properties.Resources.voiture;
-            this.pbxVoiture.Location = new System.Drawing.Point(170, 93);
+            this.pbxVoiture.Location = new System.Drawing.Point(323, 116);
+            this.pbxVoiture.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pbxVoiture.Name = "pbxVoiture";
             this.pbxVoiture.Size = new System.Drawing.Size(77, 72);
             this.pbxVoiture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbxVoiture.TabIndex = 3;
             this.pbxVoiture.TabStop = false;
             // 
-            // chkGo
+            // pbxFeuTricolore
             // 
-            this.chkGo.AutoSize = true;
-            this.chkGo.Location = new System.Drawing.Point(27, 49);
-            this.chkGo.Name = "chkGo";
-            this.chkGo.Size = new System.Drawing.Size(40, 17);
-            this.chkGo.TabIndex = 11;
-            this.chkGo.Text = "Go";
-            this.chkGo.UseVisualStyleBackColor = true;
-            this.chkGo.CheckedChanged += new System.EventHandler(this.chkGo_CheckedChanged);
+            this.pbxFeuTricolore.Location = new System.Drawing.Point(40, 131);
+            this.pbxFeuTricolore.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbxFeuTricolore.Name = "pbxFeuTricolore";
+            this.pbxFeuTricolore.Size = new System.Drawing.Size(150, 362);
+            this.pbxFeuTricolore.TabIndex = 1;
+            this.pbxFeuTricolore.TabStop = false;
+            // 
+            // pbxCircuit
+            // 
+            this.pbxCircuit.Image = global::EventFeuTricolore.Properties.Resources.Circuit;
+            this.pbxCircuit.Location = new System.Drawing.Point(250, 63);
+            this.pbxCircuit.Name = "pbxCircuit";
+            this.pbxCircuit.Size = new System.Drawing.Size(614, 428);
+            this.pbxCircuit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxCircuit.TabIndex = 12;
+            this.pbxCircuit.TabStop = false;
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1080, 650);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(889, 518);
             this.Controls.Add(this.chkGo);
             this.Controls.Add(this.pbxVoiture);
             this.Controls.Add(this.pbxFeuTricolore);
+            this.Controls.Add(this.pbxCircuit);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmMain";
             this.Text = "Event Example";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbxFeuTricolore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxVoiture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxFeuTricolore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxCircuit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,6 +104,7 @@
         private System.Windows.Forms.PictureBox pbxFeuTricolore;
         private System.Windows.Forms.PictureBox pbxVoiture;
         private System.Windows.Forms.CheckBox chkGo;
+        private System.Windows.Forms.PictureBox pbxCircuit;
     }
 }
 

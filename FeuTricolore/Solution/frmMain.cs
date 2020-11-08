@@ -22,10 +22,14 @@ namespace EventFeuTricolore
         }
 
         /// <summary>
-        /// Au chargement fu formulaire
+        /// Au chargement du formulaire
         /// </summary>
         private void Form1_Load(object sender, EventArgs e)
         {
+            // Pour que la voiture soit transparente
+            pbxVoiture.Parent = pbxCircuit;
+            pbxVoiture.Location = new Point(pbxVoiture.Location.X - pbxVoiture.Parent.Location.X, pbxVoiture.Location.Y - pbxVoiture.Parent.Location.Y);
+            pbxVoiture.BackColor = Color.Transparent;
             // Affiche le feu tricolore
             feuTricolore = new FeuTricolore(pbxFeuTricolore.CreateGraphics());
             // Créé la voiture
@@ -50,18 +54,26 @@ namespace EventFeuTricolore
                 voiture.Stop();
         }
 
+
         /// <summary>
-        /// Se déclenche lorsque la checkbox change d'état
-        /// Quand la checkbox est cochée, démarre le feu tricolore
+        /// Quand le jeu est "on", démarre le feu tricolore
         /// Sinon l'arrete.
         /// </summary>
-        private void chkGo_CheckedChanged(object sender, EventArgs e)
+        /// <param name="isPlaying"></param>
+        private void Play(bool isPlaying)
         {
-            if (chkGo.Checked)
+            if (isPlaying)
                 feuTricolore.Start();
             else
                 feuTricolore.Stop();
         }
 
+        /// <summary>
+        /// Se déclenche lorsque la checkbox change d'état
+        /// </summary>
+        private void chkGo_CheckedChanged(object sender, EventArgs e)
+        {
+            Play(chkGo.Checked);
+        }
     }
 }
