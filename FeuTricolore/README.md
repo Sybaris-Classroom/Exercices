@@ -5,6 +5,10 @@
 
 ## Objectifs pédagogique :
 L'objectif de cet exercice est d'apprendre à utiliser et implémenter un événement.
+Contenu de l'exercice :
+- Générer un événement par le designer
+- Créer son propre événement
+- S'abonner à un événement
 ## Objectifs de l'exercice :
 Faire avancer la voiture graphiquement lorsque le feu tricolore et vert, et la stopper dans les autres cas.
 ![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/FeuTricolore/FeuTricolore.gif)

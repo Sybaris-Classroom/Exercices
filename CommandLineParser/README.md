@@ -13,6 +13,7 @@ Contenu de l'exercice :
 Créer un parseur qui interprete la ligne de commande passée en parametre à l'outil. Ce parseur sera générique et réutilisable pour d'autres projets.
 
 ## English : 
+Note that all the code and documentation of this exercice is in english.
 The goal of this exercice is to understand how to create your own attributes using C#. (Note : Code comments are in english)
 Exercice contains :
 - Attributes

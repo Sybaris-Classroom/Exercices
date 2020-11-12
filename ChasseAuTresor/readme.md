@@ -4,10 +4,14 @@
 [![Alt text](https://img.youtube.com/vi/HVq0fFf4f9U/mqdefault.jpg)](https://youtu.be/HVq0fFf4f9U)
 
 ## Objectifs pédagogique :
-L'objectif de cet exercice est au travers d'un jeu de piste de découvrir un mot caché.
+- Appeler un web service
+- Utiliser la cryptographie
+- Reflection C#
+- Décompilation
 
 ## Objectifs de l'exercice :
-Etre le plus rapide pour découvrir ce mot caché.
+L'objectif de cet exercice est au travers d'un jeu de piste de découvrir un mot caché.
+Vous devez donc être le plus rapide pour découvrir ce mot.
 
 ## Installation
 - Clonner ou télécharger ce repository (ou le contenu de ce dossier) sur votre poste dans C:\TP\ChasseAuTresor
