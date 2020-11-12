@@ -3,6 +3,8 @@
 
 [![Alt text](https://img.youtube.com/vi/LfBv3kqcKk4/mqdefault.jpg)](https://youtu.be/LfBv3kqcKk4)
 
+## Temps estimé :
+150 minutes
 ## Objectifs pédagogique :
 L'objectif de cet exercice est de se familiariser avec la syntaxe C# pour tout ce qui concerne la programmation orientée object.
 Contenu de l'exercice :

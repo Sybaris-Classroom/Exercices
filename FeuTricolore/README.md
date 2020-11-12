@@ -3,6 +3,8 @@
 
 [![Alt text](https://img.youtube.com/vi/vFns_tJxJbw/mqdefault.jpg)](https://youtu.be/vFns_tJxJbw)
 
+## Temps estimé :
+60 minutes
 ## Objectifs pédagogique :
 L'objectif de cet exercice est d'apprendre à utiliser et implémenter un événement.
 Contenu de l'exercice :
