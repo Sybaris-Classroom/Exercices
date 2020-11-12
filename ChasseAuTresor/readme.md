@@ -1,11 +1,13 @@
 # Chasse au trésor
-## Objectifs :
-L'objectif de cet exercice est au travers d'un jeu de piste de découvrir un mot caché.
-L'idée d'être le plus rapide pour découvrir ce mot.
-
 ## Enoncé :
 
-[![Alt text](https://img.youtube.com/vi/HVq0fFf4f9U/0.jpg)](https://youtu.be/HVq0fFf4f9U)
+[![Alt text](https://img.youtube.com/vi/HVq0fFf4f9U/mqdefault.jpg)](https://youtu.be/HVq0fFf4f9U)
+
+## Objectifs pédagogique :
+L'objectif de cet exercice est au travers d'un jeu de piste de découvrir un mot caché.
+
+## Objectifs de l'exercice :
+Etre le plus rapide pour découvrir ce mot caché.
 
 ## Installation
 - Clonner ou télécharger ce repository (ou le contenu de ce dossier) sur votre poste dans C:\TP\ChasseAuTresor

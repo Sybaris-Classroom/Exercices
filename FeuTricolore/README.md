@@ -1,13 +1,13 @@
 # FeuTricolore
-## Objectifs :
-L'objectif de cet exercice est d'apprendre à utiliser et implémenter un événement.
-![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/FeuTricolore/FeuTricolore.gif)
-
 ## Enoncé :
 
-[![Alt text](https://img.youtube.com/vi/vFns_tJxJbw/0.jpg)](https://youtu.be/vFns_tJxJbw)
+[![Alt text](https://img.youtube.com/vi/vFns_tJxJbw/mqdefault.jpg)](https://youtu.be/vFns_tJxJbw)
 
-
+## Objectifs pédagogique :
+L'objectif de cet exercice est d'apprendre à utiliser et implémenter un événement.
+## Objectifs de l'exercice :
+Faire avancer la voiture graphiquement lorsque le feu tricolore et vert, et la stopper dans les autres cas.
+![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/FeuTricolore/FeuTricolore.gif)
 ## Les étapes :
 ### Etape 1 : 
 Afficher un feu tricolore, et qui passe du vert au orange puis au rouge, et reboucle, suivant des durées définies.
