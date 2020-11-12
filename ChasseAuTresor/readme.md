@@ -1,12 +1,17 @@
 # Chasse au trésor
-
+## Objectifs :
 L'objectif de cet exercice est au travers d'un jeu de piste de découvrir un mot caché.
 L'idée d'être le plus rapide pour découvrir ce mot.
+
+## Enoncé :
+
+[![Alt text](https://img.youtube.com/vi/HVq0fFf4f9U/0.jpg)](https://youtu.be/HVq0fFf4f9U)
 
 ## Installation
 - Clonner ou télécharger ce repository (ou le contenu de ce dossier) sur votre poste dans C:\TP\ChasseAuTresor
 - Vérifier que le dossier C:\TP\ChasseAuTresor contienne bien le fichier "Formation.asmx"
-- Lancer la ligne de commande suivante : "C:\Program Files (x86)\IIS Express\iisexpress.exe" /path:"C:\TP\ChasseAuTresor"
+- Lancer la ligne de commande suivante : "C:\Program Files (x86)\IIS Express\iisexpress.exe" /path:"C:\TP\ChasseAuTresor".
+  Attention cependant aux noms de chemins longs ou avec des espaces...
 
 ## Le jeu
 Un VIEUX (asmx) web service se cache derrière cette URL : http://localhost:8080/formation.asmx
