@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciceLinqLicornes.UnitTests", "ExerciceLinqLicornes.UnitTests\ExerciceLinqLicornes.UnitTests.csproj", "{798B8524-B5E3-45BF-B865-9AB602101ED7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExerciceLinqLicornes", "ExerciceLinqLicornes\ExerciceLinqLicornes.csproj", "{B87272F8-5E0D-47E4-A9C5-2D732C2E8757}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{798B8524-B5E3-45BF-B865-9AB602101ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{798B8524-B5E3-45BF-B865-9AB602101ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{798B8524-B5E3-45BF-B865-9AB602101ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{798B8524-B5E3-45BF-B865-9AB602101ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B87272F8-5E0D-47E4-A9C5-2D732C2E8757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B87272F8-5E0D-47E4-A9C5-2D732C2E8757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B87272F8-5E0D-47E4-A9C5-2D732C2E8757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B87272F8-5E0D-47E4-A9C5-2D732C2E8757}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {69D54BD2-3862-4033-920E-734F158CB78A}
+	EndGlobalSection
+EndGlobal

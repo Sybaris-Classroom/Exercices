@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ExerciceLinqLicornes.Animal">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Animal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExerciceLinqLicornes.Jouet">
+    <Position X="14" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Jouet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExerciceLinqLicornes.Licorne">
+    <Position X="5.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAMAAAAAEAAAAAEAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Licorne.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExerciceLinqLicornes.ExerciceLinq">
+    <Position X="8.5" Y="2.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>QAAgBAAADAAAEBAIIAIEAAAABAAAIAAAIAAIAAQAAAA=</HashCode>
+      <FileName>ExerciceLinq.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="ListeAnimaux" />
+      <Property Name="ListeJouet" />
+      <Property Name="ListeLicorne" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
