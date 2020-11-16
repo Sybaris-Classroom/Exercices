@@ -37,6 +37,9 @@ Exercice contains :
 ## DependencyInjection  
 https://github.com/Sybaris-Classroom/Exercices/tree/master/DependencyInjection     
   
+## LinqLicornes  
+https://github.com/Sybaris-Classroom/Exercices/tree/master/LinqLicornes    
+  
 ## ChasseAuTresor  
 https://github.com/Sybaris-Classroom/Exercices/tree/master/ChasseAuTresor     
 Contenu de l'exercice :  
