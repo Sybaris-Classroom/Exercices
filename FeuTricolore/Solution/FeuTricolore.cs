@@ -19,7 +19,7 @@ namespace EventFeuTricolore
         /// <param name="sender">Le feu tricolore qui déclenche l'événement</param>
         /// <param name="newColor">La nouvelle couleur du feu</param>
         /// <param name="oldColor">La précédente couleur du feu</param>
-        public delegate void FeuTricoloreEventHandler(FeuTricolore sender, FeuTricoloreEnum newColor, FeuTricoloreEnum oldColor);
+        public delegate void FeuTricoloreDelegate(FeuTricolore sender, FeuTricoloreEnum newColor, FeuTricoloreEnum oldColor);
 
         /// <summary>
         /// Les différents états/couleurs du feu
@@ -43,13 +43,17 @@ namespace EventFeuTricolore
         {
             graphics = aGraphics;
             DessineFeuTricolore();
+            // Créé le timer 
+            timer = new Timer();
+            // Abonne la méthode Timer_Tick afin qu'elle se déclenche lorsque le temps imparti sera écoulé
+            timer.Tick += Timer_Tick;
         }
 
         #region Champs
         /// <summary>
         /// Evénement que déclenche le feu tricolore lorsque la couleur change
         /// </summary>
-        public event FeuTricoloreEventHandler ColorChanged;
+        public event FeuTricoloreDelegate ColorChanged;
         /// <summary>
         /// Zone de dessin
         /// </summary>
@@ -57,7 +61,7 @@ namespace EventFeuTricolore
         /// <summary>
         /// Timer qui permet de chronométrer chaque temps entre les différentes couleurs
         /// </summary>
-        private Timer timer = new Timer();
+        private Timer timer = null;
         /// <summary>
         /// Couleur du feu
         /// </summary>
@@ -72,12 +76,6 @@ namespace EventFeuTricolore
             // Redessine le feu
             DessineFeuTricolore();
 
-            // Créé le timer 
-            timer = new Timer();
-
-            // Abonne la méthode Timer_Tick afin qu'elle se déclenche lorsque le temps imparti sera écoulé
-            timer.Tick += Timer_Tick;
-
             // Fixe le temps imparti avant le déclenchement de l'événement Tick
             timer.Interval = DUREE[FeuTricoloreEnum.Vert];
 
@@ -91,11 +89,7 @@ namespace EventFeuTricolore
             CouleurActuelle = FeuTricoloreEnum.Eteint;
             
             // On arrete le timer
-            if (timer != null)
-            {
-                timer.Stop();
-                timer = null;
-            }
+            timer.Stop();
         }
 
         /// <summary>

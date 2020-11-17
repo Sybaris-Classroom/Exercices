@@ -24,7 +24,7 @@ namespace EventFeuTricolore
         /// <summary>
         /// Au chargement du formulaire
         /// </summary>
-        private void Form1_Load(object sender, EventArgs e)
+        private void frmMain_Load(object sender, EventArgs e)
         {
             // Pour que la voiture soit transparente
             pbxVoiture.Parent = pbxCircuit;

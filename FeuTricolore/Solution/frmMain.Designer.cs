@@ -91,7 +91,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmMain";
             this.Text = "Event Example";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbxVoiture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxFeuTricolore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxCircuit)).EndInit();

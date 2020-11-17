@@ -50,6 +50,18 @@ namespace EventFeuTricolore
         {
             graphics = aGraphics;
             DessineFeuTricolore();
+            // TODO 2 : Résumé :
+            //          Ici l'objectif est de faire fonctionner le feu tricolore. Pour cela on va utiliser un Timer.
+            //          Le timer va permettre d'attendre une certaine durée entre chaque changement de couleur du feu.
+            
+            // TODO 2a : Créer le timer (le champ timer existe déjà. Reste à l'instancier)
+
+            // TODO 2b : S'abonner à l'événement Tick (Ex : https://docs.microsoft.com/fr-fr/dotnet/api/system.windows.forms.timer?view=netframework-4.8)
+            //           Lorsque l'événement se déclenche il faut réaliser les actions suivantes :
+            //           1°/ Arreter le timer (le temps qu'on change la couleur et qu'on lui parametre le nouveau temps d'attente)
+            //           2°/ Modifier la couleur du feu en passant à la couleur suivante (Utiliser la méthode CouleurSuivante())
+            //           3°/ Fixer la nouvelle durée d'attente en fonction de la couleur actuelle (Utiliser le dictionnaire DUREE)
+            //           4°/ Redémarrer le timer
         }
 
         #region Champs
@@ -64,7 +76,7 @@ namespace EventFeuTricolore
         /// <summary>
         /// Timer qui permet de chronométrer chaque temps entre les différentes couleurs
         /// </summary>
-        private Timer timer = new Timer();
+        private Timer timer = null;
         /// <summary>
         /// Couleur du feu
         /// </summary>
@@ -78,19 +90,6 @@ namespace EventFeuTricolore
             
             // Redessine le feu
             DessineFeuTricolore();
-
-            // TODO 2 : Résumé :
-            //          Ici l'objectif est de faire fonctionner le feu tricolore. Pour cela on va utiliser un Timer.
-            //          Le timer va permettre d'attendre une certaine durée entre chaque changement de couleur du feu.
-
-            // TODO 2a : Créer le timer (Ex : https://docs.microsoft.com/fr-fr/dotnet/api/system.windows.forms.timer?view=netframework-4.8)
-
-            // TODO 2b : S'abonner à l'événement Tick
-            //           Lorsque l'événement se déclenche il faut réaliser les actions suivantes :
-            //           1°/ Arreter le timer (le temps qu'on change la couleur et qu'on lui parametre le nouveau temps d'attente)
-            //           2°/ Modifier la couleur du feu en passant à la couleur suivante (Utiliser la méthode CouleurSuivante())
-            //           3°/ Fixer la nouvelle durée d'attente en fonction de la couleur actuelle (Utiliser le dictionnaire DUREE)
-            //           4°/ Redémarrer le timer
 
             // TODO 2c : Fixer le temps imparti au timer avant le déclenchement de l'événement Tick
 
