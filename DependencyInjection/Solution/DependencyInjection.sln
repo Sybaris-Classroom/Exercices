@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{3996215C-17B6-446A-8CB9-0EE5FDB607A4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{223E04CB-451C-4F35-A347-F49020661227}"
+	ProjectSection(SolutionItems) = preProject
+		AdditionalFiles\People.txt = AdditionalFiles\People.txt
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Data Storage", "04-Data Storage", "{AD2A3632-5FF2-4ADB-B829-BECF475FBAF4}"
 EndProject
@@ -33,7 +36,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonReader.Caching", "Per
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeopleViewer.Presentation.Tests", "PeopleViewer.Presentation.Tests\PeopleViewer.Presentation.Tests.csproj", "{661E5F6D-AACD-4EE8-A2EB-562E8ADF7288}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonReader.CSV.Tests", "PersonReader.CSV.Tests\PersonReader.CSV.Tests.csproj", "{AA508322-5AD5-4E1A-977C-1153A654C8AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonReader.CSV.Tests", "PersonReader.CSV.Tests\PersonReader.CSV.Tests.csproj", "{AA508322-5AD5-4E1A-977C-1153A654C8AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

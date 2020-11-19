@@ -26,7 +26,7 @@ namespace PeopleViewer
             // TODO 8-1 : Rajouter le package Nuget "Ninject"
             // TODO 8-2 : Créer un champ dans la classe App avec cette déclaration : IKernel Container = new StandardKernel(); // Ceci créé le container pour l'IOC
             // TODO 8-3 : Commenter le contenu de cette méthode (ComposeObject), et rajouter le code suivant : Application.Current.MainWindow = Container.Get<MainWindow>();
-            // TODO 8-4 : Rajouter avant la configuration du container : Container.Bind<IRepository>().To<ServiceReader>(); // Configure le container pour qu'une demande d'un IRepository fournisse un ServiceReader
+            // TODO 8-4 : Rajouter avant la précédente ligne de code ajoutée, la configuration du container : Container.Bind<IRepository>().To<ServiceReader>(); // Configure le container pour qu'une demande d'un IRepository fournisse un ServiceReader
             // TODO 8-5 : Vérifier que l'application fonctionne toujours correctement
             // TODO 8-6 : Changer le binding du container pour fournir un CSVReader à la place du ServiceReader
             // TODO 8-7 : Configurer le binding pour qu'il utilise "InSingletonScope" (C.F. https://github.com/ninject/Ninject/wiki/Object-Scopes)
