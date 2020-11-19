@@ -24,6 +24,8 @@ namespace PersonReader.CSV
             using (var reader = new StreamReader(filePath))
             {
                 string fileData = reader.ReadToEnd();
+                // Workaround to solve CR/LF problem (github in some cases returns LF without CR...)
+                fileData = fileData.Replace("\r\n", "\n").Replace("\r", "\n").Replace("\n", "\r\n");
                 return fileData;
             }
         }
