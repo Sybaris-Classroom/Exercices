@@ -2,7 +2,7 @@
 ## En français :  
 ### Enoncé :  
   
-[![Exercice en vidéo](https://img.youtube.com/vi/3JiqLbYsbXQ/mqdefault.jpg)](https://youtu.be/3JiqLbYsbXQ)  
+[![Exercice en vidéo](https://img.youtube.com/vi/3JiqLbYsbXQ/0.jpg)](https://youtu.be/3JiqLbYsbXQ)  
   
 ### Temps estimé :  
 120 à 180 minutes  
