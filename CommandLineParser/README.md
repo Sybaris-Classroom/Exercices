@@ -2,9 +2,7 @@
 ## En français :  
 ### Enoncé :  
   
-<iframe id="ytplayer" type="text/html"   width="320" height="180"
-  src="http://www.youtube.com/embed/3JiqLbYsbXQ"
-  frameborder="0"/>
+[![Exercice en vidéo](https://img.youtube.com/vi/3JiqLbYsbXQ/mqdefault.jpg)](https://youtu.be/3JiqLbYsbXQ)  
   
 ### Temps estimé :  
 120 à 180 minutes  
