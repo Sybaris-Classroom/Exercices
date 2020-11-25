@@ -2,9 +2,23 @@
 ## En français :  
 ### Enoncé :  
   
+<style>
+.youtube {
+    position: relative;
+    display: inline-block;
+}
+.youtube:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: transparent url({play icon url here}) center center no-repeat;
+}
+</style>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=3JiqLbYsbXQ
 " target="_blank"><img src="http://img.youtube.com/vi/3JiqLbYsbXQ/mqdefault.jpg"
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>  
+alt="Video de l'exercice" border="10" /></a>  
   
 ### Temps estimé :  
 120 à 180 minutes  
