@@ -1,7 +1,7 @@
 # POO  
 ## Enoncé :  
   
-[![Alt text](https://img.youtube.com/vi/LfBv3kqcKk4/mqdefault.jpg)](https://youtu.be/LfBv3kqcKk4)  
+[![Exercice en vidéo](https://img.youtube.com/vi/LfBv3kqcKk4/mqdefault.jpg)](https://youtu.be/LfBv3kqcKk4)  
   
 ## Temps estimé :  
 150 minutes  

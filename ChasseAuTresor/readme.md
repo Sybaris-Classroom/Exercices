@@ -1,7 +1,7 @@
 # Chasse au trésor  
 ## Enoncé :  
   
-[![Alt text](https://img.youtube.com/vi/HVq0fFf4f9U/mqdefault.jpg)](https://youtu.be/HVq0fFf4f9U)  
+[![Exercice en vidéo](https://img.youtube.com/vi/HVq0fFf4f9U/mqdefault.jpg)](https://youtu.be/HVq0fFf4f9U)  
   
 ## Temps estimé :  
 180 minutes  

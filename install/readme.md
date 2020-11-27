@@ -3,7 +3,9 @@ Je vous recommande d'installer Visual Studio avec les options suivantes afin de 
 Le processus de téléchargement et d'installation étant assez long, je vous invite à l'effectuer à l'avance, afin que votre PC soit prêt avant le début de la formation.  
 :warning: Attention, "Visual Studio" et "Visual Studio Code" sont 2 produits très différents.:warning:  
 Nous utiliserons le 1er pour cette formation.
-
+## Pré-requis :
+La formation est prévue sous Windows. Je vous invite à vous équiper durant cette formation d'un OS windows, car beaucoup d'exerices ne fonctionneront pas sinon.  
+Une alternative est de télécharger une machine virtuelle ici : https://developer.microsoft.com/fr-fr/windows/downloads/virtual-machines/. Attention cependant à bien vérifier avant la formation qu'elle foncitonne correctement, et que les performances sont acceptables.
 ## 1 - Télécharger Visual Studio 2019 Community :
 A l'url suivante : https://visualstudio.microsoft.com/fr/downloads/
 et lancer l'installation.

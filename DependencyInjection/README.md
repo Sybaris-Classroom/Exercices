@@ -1,7 +1,7 @@
 # DependencyInjection  
 ## Enoncé :  
   
-[![Alt text](https://img.youtube.com/vi/y6iIcWTm0HI/mqdefault.jpg)](https://youtu.be/y6iIcWTm0HI)  
+[![Exercice en vidéo](https://img.youtube.com/vi/y6iIcWTm0HI/mqdefault.jpg)](https://youtu.be/y6iIcWTm0HI)  
   
 ## Temps estimé :  
 90 minutes  

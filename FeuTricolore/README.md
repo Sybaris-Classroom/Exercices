@@ -1,7 +1,7 @@
 # FeuTricolore  
 ## Enoncé :  
   
-[![Alt text](https://img.youtube.com/vi/vFns_tJxJbw/mqdefault.jpg)](https://youtu.be/vFns_tJxJbw)  
+[![Exercice en vidéo](https://img.youtube.com/vi/vFns_tJxJbw/mqdefault.jpg)](https://youtu.be/vFns_tJxJbw)  
   
 ## Temps estimé :  
 60 minutes  
