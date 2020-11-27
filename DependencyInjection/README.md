@@ -13,6 +13,5 @@ Contenu de l'exercice :
 - Voir les containers IOC  
 ## Objectifs de l'exercice :  
 Refactorer l'application afin de permettre à la fois l'accès aux données par WebAPI, par CSV, implémenter un cache, et des tests unitaires.  
-![alt text](https://github.com/sybaris-classroom/Exercices/blob/master/FeuTricolore/FeuTricolore.gif)  
 ## Les étapes :  
 Suivre les TODO numérotés.  
