@@ -70,7 +70,7 @@ namespace ExerciceLinqLicornes
         /// Retourner la liste des licornes triees par age puis en cas d'égalité par nom
         /// </summary>
         /// <returns></returns>
-        public IEnumerable<Licorne> LicorneLesPlusJeuneDabordMaislesAAussi()
+        public IEnumerable<Licorne> LicorneLesPlusJeuneDabordPuisParOrdreAlphabetiqueDuNom()
         {
             throw new NotImplementedException();
         }

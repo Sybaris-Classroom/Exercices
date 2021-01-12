@@ -81,9 +81,9 @@ namespace ExerciceLinqLicornes.UnitTests
 
         [TestMethod]
         [TestCategory("Débutant")]
-        public void LicorneLesPlusJeuneDabordMaislesAAussi()
+        public void LicorneLesPlusJeuneDabordPuisParOrdreAlphabetiqueDuNom()
         {
-            IEnumerable<Animal> res = Exercice.LicorneLesPlusJeuneDabordMaislesAAussi();
+            IEnumerable<Animal> res = Exercice.LicorneLesPlusJeuneDabordPuisParOrdreAlphabetiqueDuNom();
             // Version méthode d'extension
             var expected = Exercice.ListeLicorne.OrderBy(x => x.Age).ThenBy(x => x.Name);
             // Version déclarative
@@ -113,7 +113,7 @@ namespace ExerciceLinqLicornes.UnitTests
         {
             var res = Exercice.LesLicornesOntDuCaractere();
             // Version méthode d'extension
-            var expected = Exercice.ListeLicorne.SelectMany(x => x.ListePeronnalites);
+            var expected = Exercice.ListeLicorne.SelectMany(x => x.ListePersonnalites);
             // Pas de version déclarative...
             Assert.IsTrue(res.SequenceEqual(expected));
         }
@@ -187,7 +187,7 @@ namespace ExerciceLinqLicornes.UnitTests
             var expected = Exercice.ListeLicorne.Aggregate((l1, l2) => Licorne.Fusiiioooon(l1, l2));
             // Pas de version déclarative...
             Assert.IsTrue(res.Couleur == expected.Couleur);
-            Assert.IsTrue(res.ListePeronnalites.SequenceEqual(expected.ListePeronnalites));
+            Assert.IsTrue(res.ListePeronnalites.SequenceEqual(expected.ListePersonnalites));
         }
 
         [TestMethod]

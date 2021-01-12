@@ -10,7 +10,7 @@ namespace ExerciceLinqLicornes
     {    
         public string Couleur { get; set; }
         public int Age { get; set; }
-        public List<string> ListePeronnalites { get; set; }
+        public List<string> ListePersonnalites { get; set; }
 
         public static Licorne FaireUnBebe(Licorne licorne1, Licorne licorne2)
         {
@@ -19,7 +19,7 @@ namespace ExerciceLinqLicornes
 
         public static Licorne Fusiiioooon(Licorne licorne1, Licorne licorne2)
         {
-            return new Licorne() { Couleur = licorne1.Couleur + licorne2.Couleur, ListePeronnalites = licorne1.ListePeronnalites.Concat(licorne2.ListePeronnalites).ToList() };
+            return new Licorne() { Couleur = licorne1.Couleur + licorne2.Couleur, ListePersonnalites = licorne1.ListePersonnalites.Concat(licorne2.ListePersonnalites).ToList() };
         }
     }
 }

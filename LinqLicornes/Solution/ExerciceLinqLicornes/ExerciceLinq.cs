@@ -75,7 +75,7 @@ namespace ExerciceLinqLicornes
         public IEnumerable<Licorne> LicorneLesPlusJeuneDabord()
         {
             // Version méthode d'extension
-            return ListeLicorne.OrderBy<Licorne, int>(l => l.Age);
+            return ListeLicorne.OrderBy(l => l.Age);
             // Version déclarative
             //return from licorne in ListeLicorne
             //       orderby licorne.Age
@@ -86,10 +86,10 @@ namespace ExerciceLinqLicornes
         /// Retourner la liste des licornes triees par age puis en cas d'égalité par nom
         /// </summary>
         /// <returns></returns>
-        public IEnumerable<Licorne> LicorneLesPlusJeuneDabordMaislesAAussi()
+        public IEnumerable<Licorne> LicorneLesPlusJeuneDabordPuisParOrdreAlphabetiqueDuNom()
         {
             // Version méthode d'extension
-            return ListeLicorne.OrderBy<Licorne, int>(l => l.Age).ThenBy(l => l.Name);
+            return ListeLicorne.OrderBy(l => l.Age).ThenBy(l => l.Name);
             // Version déclarative
             //return from licorne in ListeLicorne
             //       orderby licorne.Age, licorne.Name
@@ -117,7 +117,7 @@ namespace ExerciceLinqLicornes
         public IEnumerable<string> LesLicornesOntDuCaractere()
         {
             // Version méthode d'extension
-            return ListeLicorne.SelectMany(l => l.ListePeronnalites);
+            return ListeLicorne.SelectMany(l => l.ListePersonnalites);
             // Pas de version déclarative...
         }
 

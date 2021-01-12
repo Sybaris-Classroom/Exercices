@@ -11,12 +11,12 @@ namespace ExerciceLinqLicornes
         public static List<Licorne> InvocationLicornes()
         {
             var res = new List<Licorne>();
-            var licorne1 = new Licorne() { Name = "Twilight Sparkle", Couleur = "Violet", Age = 10, ListePeronnalites = new List<string>() { "Studieuse", "Heroique" } };
-            var licorne2 = new Licorne() { Name = "Rarity", Couleur = "Blanc", Age = 12, ListePeronnalites = new List<string>() { "Précieuse" } };
-            var licorne3 = new Licorne() { Name = "Fluttershy", Couleur = "Jaune", Age = 10, ListePeronnalites = new List<string>() { "Timide", "Gentille" } };
-            var licorne4 = new Licorne() { Name = "Pinkie Pie", Couleur = "Rose", Age = 11, ListePeronnalites = new List<string>() { "Gloutonne" } };
-            var licorne5 = new Licorne() { Name = "Rainbow Dash", Couleur = "Bleu", Age = 11, ListePeronnalites = new List<string>() { "Rapide", "Moqueuse" } };
-            var licorne6 = new Licorne() { Name = "AppleJack", Couleur = "Marron", Age = 15, ListePeronnalites = new List<string>() { "Forte", "Travailleuse" } };
+            var licorne1 = new Licorne() { Name = "Twilight Sparkle", Couleur = "Violet", Age = 10, ListePersonnalites = new List<string>() { "Studieuse", "Heroique" } };
+            var licorne2 = new Licorne() { Name = "Rarity", Couleur = "Blanc", Age = 12, ListePersonnalites = new List<string>() { "Précieuse" } };
+            var licorne3 = new Licorne() { Name = "Fluttershy", Couleur = "Jaune", Age = 10, ListePersonnalites = new List<string>() { "Timide", "Gentille" } };
+            var licorne4 = new Licorne() { Name = "Pinkie Pie", Couleur = "Rose", Age = 11, ListePersonnalites = new List<string>() { "Gloutonne" } };
+            var licorne5 = new Licorne() { Name = "Rainbow Dash", Couleur = "Bleu", Age = 11, ListePersonnalites = new List<string>() { "Rapide", "Moqueuse" } };
+            var licorne6 = new Licorne() { Name = "AppleJack", Couleur = "Marron", Age = 15, ListePersonnalites = new List<string>() { "Forte", "Travailleuse" } };
             res.Add(licorne1);
             res.Add(licorne2);
             res.Add(licorne3);
