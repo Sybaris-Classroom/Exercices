@@ -128,7 +128,7 @@ namespace ExerciceLinqLicornes
         public IEnumerable<Tuple<int, int>> PyramideDesAgesDesLicornes()
         {
             // Version méthode d'extension
-            return ListeLicorne.GroupBy(l => l.Age, (x, y) => new Tuple<int, int>(x, y.Count()));
+            return ListeLicorne.GroupBy(l => l.Age, (age, listeLicornes) => new Tuple<int, int>(age, listeLicornes.Count()));
             // Version déclarative
             //return from licorne in ListeLicorne
             //       group licorne by licorne.Age into newGroup
@@ -142,7 +142,7 @@ namespace ExerciceLinqLicornes
         public Dictionary<int, List<Licorne>> QuelleLicorneAMonAge()
         {
             // Version méthode d'extension
-            return ListeLicorne.GroupBy(l => l.Age).ToDictionary(x => x.Key, x => x.ToList());
+            return ListeLicorne.GroupBy(l => l.Age).ToDictionary(iGroupLicorne => iGroupLicorne.Key, iGroupLicorne => iGroupLicorne.ToList());
             // Version déclarative
             //return (from licorne in ListeLicorne
             //        group licorne by licorne.Age into newGroup
@@ -167,7 +167,11 @@ namespace ExerciceLinqLicornes
         public IEnumerable<Tuple<Licorne, List<Jouet>>> AChacunSonJouet()
         {
             // Version méthode d'extension
-            return ListeLicorne.Select(l => new Tuple<Licorne, List<Jouet>>(l, ListeJouet.Where(j => j.NomProprietaire == l.Name).ToList()));
+            // 1ère solution
+            return ListeLicorne.GroupJoin(ListeJouet, l => l.Name, j => j.NomProprietaire, (licorne, myJoinListJouet) => new Tuple<Licorne, List<Jouet>>(licorne, myJoinListJouet.ToList()));
+            // 2ème solution
+            //return ListeLicorne.Select(l => new Tuple<Licorne, List<Jouet>>(l, ListeJouet.Where(j => j.NomProprietaire == l.Name).ToList()));
+            
             // Version déclarative
             //return from licorne in ListeLicorne
             //       join jouet in ListeJouet on licorne.Name equals jouet.NomProprietaire into jouetsDeLaLicorne
