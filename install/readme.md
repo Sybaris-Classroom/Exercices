@@ -6,7 +6,7 @@ Nous utiliserons le 1er pour cette formation.
 ## Prérequis :
 La formation est prévue sous Windows. Je vous invite à vous équiper durant cette formation d'un OS Windows, car sinon la plupart des exercices ne fonctionneront pas.  
 Une alternative est de télécharger une machine virtuelle ici : https://developer.microsoft.com/fr-fr/windows/downloads/virtual-machines/. Attention cependant à bien vérifier avant la formation qu'elle fonctionne correctement, et que les performances sont acceptables.
-## 1 - Télécharger Visual Studio 2019 Community :
+## 1 - Télécharger Visual Studio 2022 Community :
 A l'url suivante : https://visualstudio.microsoft.com/fr/downloads/
 et lancer l'installation.
 Attention, le téléchargement et l'installation peuvent être assez longs (comptez 3 heures...)
