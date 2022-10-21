@@ -51,7 +51,7 @@ namespace POO.UnitTests
             var propertyInfo = type.GetProperty("Charge");
             // Assert
             propertyInfo.Should().NotBeNull(because: "Propriétée Charge non trouvé sur le classe VehiculeRoulant");
-            propertyInfo.PropertyType.Should().Be(typeof(int), "La propriétée VitesseMaxi doit être de type int");
+            propertyInfo.PropertyType.Should().Be(typeof(int), "La propriétée Charge doit être de type int");
         }
 
         [TestMethod]

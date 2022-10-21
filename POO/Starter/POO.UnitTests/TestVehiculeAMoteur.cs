@@ -64,7 +64,7 @@ namespace POO.UnitTests
             var type = GetVehiculeAMoteurType();
             var propertyInfo = type.GetProperty("VitesseMini");
             // Assert
-            propertyInfo.Should().NotBeNull(because: "Propriétée VitesseMaxi non trouvé sur le classe VehiculeAMoteur");
+            propertyInfo.Should().NotBeNull(because: "Propriétée VitesseMini non trouvé sur le classe VehiculeAMoteur");
             propertyInfo.PropertyType.Should().Be(typeof(float), "La propriétée VitesseMini doit être de type float");
         }
 

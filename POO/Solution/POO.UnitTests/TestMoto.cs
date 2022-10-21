@@ -83,8 +83,8 @@ namespace POO.UnitTests
             distance.Should().Be(1000, "La valeur par défaut de distance doit être de 1000");
             vistesseMaxi.Should().Be(180.0f, "La valeur par défaut de VitesseMaxi doit être de 180");
             vistesseMini.Should().Be(90.0f, "La valeur par défaut de VitesseMini doit être de 90");
-            passagers.Should().Be(4, "La valeur par défaut de passagers doit être de 4");
-            charge.Should().Be(0, "La valeur par défaut de passagers doit être de 0 car elle ne doit pas être initialisée");
+            passagers.Should().Be(4, "La valeur par défaut de Passagers doit être de 4");
+            charge.Should().Be(0, "La valeur par défaut de Charge doit être de 0 car elle ne doit pas être initialisée");
         }
 
         [TestMethod]
