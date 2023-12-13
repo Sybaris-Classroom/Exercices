@@ -32,7 +32,13 @@ Relancer Visual Studio, désormais, il doit être en anglais.
 
 ![alt text](https://github.com/Sybaris-Classroom/Exercices/blob/master/installCpp/vs4.png)
 
-## 4 - Raccourcis clavier (Facultatif)
+## 4 - Extension Template application winform
+Je vous conseille d'installer l'extension suivante (Extensions/Manage Extensions) qui vous proposera un template au démarrage pour créer un exemple d'application contenant une winform.
+![alt text](https://github.com/Sybaris-Classroom/Exercices/blob/master/installCpp/vs6.jpg)
+Une fois cette extension installée, vous pourrez créer une application winform complète :
+![alt text](https://github.com/Sybaris-Classroom/Exercices/blob/master/installCpp/vs7.jpg)
+
+## 5 - Raccourcis clavier (Facultatif)
 Pour ma part, j'utilise les raccourcis clavier C# "classiques". Dans le cas où vous souhaiteriez avoir les même raccourcis claivers que moi, vous pouvez le faire en modifiant l'option "keyboard mapping".
 Pour cela allez dans le menu Tools/Options/Environment/Keyboard, et vérifiez que l'option est positionnée à la valeur "Visual C# 2005".
 Vous pouvez choisir un autre mapping clavier, cependant je ne pourrais pas vous donner les raccourcis claviers correspondants...
