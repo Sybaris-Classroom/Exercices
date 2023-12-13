@@ -22,7 +22,6 @@ Attention, le téléchargement et l'installation peuvent être assez longs (parfois
 
 ![alt text](https://github.com/Sybaris-Classroom/Exercices/blob/master/install/vs1.jpg)
 ![alt text](https://github.com/Sybaris-Classroom/Exercices/blob/master/install/vs2.jpg)
-![alt text](https://github.com/Sybaris-Classroom/Exercices/blob/master/install/vs-wcf.jpg)
 ![alt text](https://github.com/Sybaris-Classroom/Exercices/blob/master/install/vs3.jpg)
 
 ## 3 - Module linguistique

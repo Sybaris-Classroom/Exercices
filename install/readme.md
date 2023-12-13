@@ -1,8 +1,10 @@
 # Installation de Visual Studio 2022.
 Je vous recommande d'installer Visual Studio avec les options suivantes afin de suivre au mieux ma formation.
 Le processus de téléchargement et d'installation étant assez long, je vous invite à l'effectuer à l'avance, afin que votre PC soit prêt avant le début de la formation.  
-:warning: Attention, "Visual Studio" et "Visual Studio Code" sont 2 produits très différents.:warning:  
-Nous utiliserons le 1er pour cette formation.
+> [!WARNING]
+> Attention, "Visual Studio" et "Visual Studio Code" sont 2 produits très différents.
+
+Nous utiliserons le 1er (Visual Studio) pour cette formation.
 ## Prérequis :
 La formation est prévue sous Windows. Je vous invite à vous équiper durant cette formation d'un OS Windows, car sinon la plupart des exercices ne fonctionneront pas.  
 Une alternative est de télécharger une machine virtuelle ici : https://developer.microsoft.com/fr-fr/windows/downloads/virtual-machines/. Attention cependant à bien vérifier avant la formation qu'elle fonctionne correctement, et que les performances sont acceptables.
