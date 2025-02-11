@@ -18,6 +18,7 @@ namespace Demos
             //YieldReturn.Run();
             //StringCompareTo.Run();
             //AppConfigSettings.Run();
+            CaptureVariableMultithreading.Run();
 
             // Methode d'extension
             //Personne p = new Personne() { Nom = "Planas",Prenom = "Jean-Pierre" };
@@ -40,7 +41,7 @@ namespace Demos
             ////PassageDeParametres.Quizz2.Run();
             ////PassageDeParametres.Quizz3.Run();
             ////PassageDeParametres.Quizz4.Run();
-            PassageDeParametres.Quizz6.Run();
+            //PassageDeParametres.Quizz6.Run();
 
             // Quizz : Boxing
             //Boxing.RunAllSteps();

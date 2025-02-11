@@ -85,6 +85,7 @@
     <Compile Include="AsyncAwait\Quizz5.cs" />
     <Compile Include="AsyncAwait\Quizz6.cs" />
     <Compile Include="Boxing.cs" />
+    <Compile Include="CaptureVariableMultithreading.cs" />
     <Compile Include="Collections.cs" />
     <Compile Include="Delegates.cs" />
     <Compile Include="DelegatesLogPerf.cs" />
