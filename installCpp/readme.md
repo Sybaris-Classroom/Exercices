@@ -1,4 +1,4 @@
-# Installation de Visual Studio 2022 pour C++/CLI.
+# Installation de Visual Studio 2026 pour C++/CLI.
 Je vous recommande d'installer Visual Studio avec les options suivantes afin de suivre au mieux ma formation.
 Le processus de téléchargement et d'installation étant assez long, je vous invite à l'effectuer à l'avance, afin que votre PC soit prêt avant le début de la formation.  
 > [!WARNING]
@@ -7,8 +7,8 @@ Le processus de téléchargement et d'installation étant assez long, je vous invit
 Nous utiliserons le 1er (Visual Studio) pour cette formation.
 ## Prérequis :
 La formation est prévue sous Windows. Je vous invite à vous équiper durant cette formation d'un OS Windows, car sinon la plupart des exercices ne fonctionneront pas.  
-Une alternative est de télécharger une machine virtuelle ici : https://developer.microsoft.com/fr-fr/windows/downloads/virtual-machines/. Attention cependant à bien vérifier avant la formation qu'elle fonctionne correctement, et que les performances sont acceptables.
-## 1 - Télécharger Visual Studio 2022 Community :
+Une alternative est d'installer une machine virtuelle Windows. Attention cependant à bien vérifier avant la formation qu'elle fonctionne correctement, et que les performances sont acceptables.
+## 1 - Télécharger Visual Studio 2026 Community :
 A l'url suivante : https://visualstudio.microsoft.com/fr/downloads/
 et lancer l'installation.
 Attention, le téléchargement et l'installation peuvent être assez longs (parfois jusqu'à 3 heures...)
